@@ -1,0 +1,17 @@
+D:\asp\BookStore\BookStore\BookStore.Aplication\bin\Debug\net9.0\BookStore.Aplication.deps.json
+D:\asp\BookStore\BookStore\BookStore.Aplication\bin\Debug\net9.0\BookStore.Aplication.dll
+D:\asp\BookStore\BookStore\BookStore.Aplication\bin\Debug\net9.0\BookStore.Aplication.pdb
+D:\asp\BookStore\BookStore\BookStore.Aplication\bin\Debug\net9.0\BookStore.Data.dll
+D:\asp\BookStore\BookStore\BookStore.Aplication\bin\Debug\net9.0\BookStore.Domain.dll
+D:\asp\BookStore\BookStore\BookStore.Aplication\bin\Debug\net9.0\BookStore.Data.pdb
+D:\asp\BookStore\BookStore\BookStore.Aplication\bin\Debug\net9.0\BookStore.Domain.pdb
+D:\asp\BookStore\BookStore\BookStore.Aplication\obj\Debug\net9.0\BookStore.Aplication.csproj.AssemblyReference.cache
+D:\asp\BookStore\BookStore\BookStore.Aplication\obj\Debug\net9.0\BookStore.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\asp\BookStore\BookStore\BookStore.Aplication\obj\Debug\net9.0\BookStore.Aplication.AssemblyInfoInputs.cache
+D:\asp\BookStore\BookStore\BookStore.Aplication\obj\Debug\net9.0\BookStore.Aplication.AssemblyInfo.cs
+D:\asp\BookStore\BookStore\BookStore.Aplication\obj\Debug\net9.0\BookStore.Aplication.csproj.CoreCompileInputs.cache
+D:\asp\BookStore\BookStore\BookStore.Aplication\obj\Debug\net9.0\BookStor.AD1AF6B9.Up2Date
+D:\asp\BookStore\BookStore\BookStore.Aplication\obj\Debug\net9.0\BookStore.Aplication.dll
+D:\asp\BookStore\BookStore\BookStore.Aplication\obj\Debug\net9.0\refint\BookStore.Aplication.dll
+D:\asp\BookStore\BookStore\BookStore.Aplication\obj\Debug\net9.0\BookStore.Aplication.pdb
+D:\asp\BookStore\BookStore\BookStore.Aplication\obj\Debug\net9.0\ref\BookStore.Aplication.dll

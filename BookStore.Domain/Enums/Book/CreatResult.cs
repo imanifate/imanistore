@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BookStore.Domain.Enums.Book
+{
+    public enum CreatResult
+    {
+        Success,Null,Error
+    }
+}
