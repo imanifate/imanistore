@@ -11,7 +11,7 @@ namespace BookStore.Domain.Models
     public class Category : BaseEntite
     {
         public int? ParentId { get; set; }
-        public virtual Category? Parent { get; set; }
-        public virtual ICollection<Category> Children { get; set; } = new List<Category>();
+        public  Category? Parent { get; set; }
+        public  ICollection<Category> Children { get; set; } = new List<Category>();
     }
 }

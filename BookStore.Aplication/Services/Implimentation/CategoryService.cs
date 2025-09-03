@@ -5,30 +5,33 @@ using System.Text;
 using System.Threading.Tasks;
 using BookStore.Aplication.Services.Interfaces;
 using BookStore.Domain.Contracts;
-using BookStore.Domain.Enums.Category;
 using BookStore.Domain.Models;
 using BookStore.Domain.ViewModels.Category;
+using BookStore.Data.Repositores;
+using BookStore.Domain.Enums;
+
 
 namespace BookStore.Aplication.Services.Implimentation
 {
-    public class CategoryService (ICategoryRepository categoryRepository):ICategoryService
+    public class CategoryService(IGenericRepository<Category> genericRepository) : ICategoryService
     {
-        public CreatResult Creat(CreateCategoryViewModel model)
+       
+        public async Task<CreatResult> CreateAsync(CreateCategoryViewModel model)
         {
-            categoryRepository.Create(new Category
+            genericRepository.Add(new Category
             {
                 ParentId = model.ParentId,
                 Title = model.Title,
             });
 
-            categoryRepository.Save();
+           await genericRepository.SaveAsync();
 
             return CreatResult.Success; 
         }
 
-        public List<ListCategoryViewModel> GetAll()
+        public async Task<List<ListCategoryViewModel>> GetAllAsync()
         {
-           List<Category> categoreis = categoryRepository.GetAll();
+           List<Category> categoreis = await genericRepository.GetAllAsync();
 
             if (categoreis == null) return null;
 
@@ -39,10 +42,10 @@ namespace BookStore.Aplication.Services.Implimentation
             }).ToList();
         }
 
-        public EditCategoryViewModel GetForEdit(int id)
+        public async Task<EditCategoryViewModel> GetForEdit(int id)
         {
 
-          Category category = categoryRepository.GetById(id);
+          Category category =await genericRepository.GetByIdAsync(id);
 
             return new EditCategoryViewModel()
             {
@@ -52,34 +55,25 @@ namespace BookStore.Aplication.Services.Implimentation
 
         }
 
-        public EditResult Edit(EditCategoryViewModel model)
+        public async Task<EditResult> Edit(EditCategoryViewModel model)
         {
-            Category category = categoryRepository.GetById(model.Id);
+            Category category = await genericRepository.GetByIdAsync(model.Id);
 
             if (category == null) return EditResult.Null;
 
             category.Title = model.Title;
             category.IsDelete = model.IsDeleted;
 
-            categoryRepository.Update(category);
-            categoryRepository.Save();
+            genericRepository.Update(category);
+           await genericRepository.SaveAsync();
 
             return EditResult.Success;
         }
-
-        public DeleteResult Delete(int id)
+        public Task<DeleteResult> Delete(int id)
         {
-            Category category = categoryRepository.GetById(id);
-
-            if (category == null) return DeleteResult.Null;
-
-            category.IsDelete = true;
-
-            categoryRepository.Update(category);
-            categoryRepository.Save();
-
-            return DeleteResult.Success;
-
+            throw new NotImplementedException();
         }
+
+      
     }
 }

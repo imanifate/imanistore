@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fwrim7PyXVs=",
+  "dgSpecHash": "I/hzXtPaLCs=",
   "success": true,
-  "projectFilePath": "D:\\asp\\BookStore\\BookStore\\BookStore.Web\\BookStore.Web.csproj",
+  "projectFilePath": "D:\\asp\\bookStoor\\BookStore.Web\\BookStore.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\imani\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\imani\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

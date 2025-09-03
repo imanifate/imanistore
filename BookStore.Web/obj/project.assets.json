@@ -7720,11 +7720,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\asp\\BookStore\\BookStore\\BookStore.Web\\BookStore.Web.csproj",
+      "projectUniqueName": "D:\\asp\\bookStoor\\BookStore.Web\\BookStore.Web.csproj",
       "projectName": "BookStore.Web",
-      "projectPath": "D:\\asp\\BookStore\\BookStore\\BookStore.Web\\BookStore.Web.csproj",
+      "projectPath": "D:\\asp\\bookStoor\\BookStore.Web\\BookStore.Web.csproj",
       "packagesPath": "C:\\Users\\imani\\.nuget\\packages\\",
-      "outputPath": "D:\\asp\\BookStore\\BookStore\\BookStore.Web\\obj\\",
+      "outputPath": "D:\\asp\\bookStoor\\BookStore.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7746,14 +7746,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\asp\\BookStore\\BookStore\\BookStore.Aplication\\BookStore.Aplication.csproj": {
-              "projectPath": "D:\\asp\\BookStore\\BookStore\\BookStore.Aplication\\BookStore.Aplication.csproj"
+            "D:\\asp\\bookStoor\\BookStore.Aplication\\BookStore.Aplication.csproj": {
+              "projectPath": "D:\\asp\\bookStoor\\BookStore.Aplication\\BookStore.Aplication.csproj"
             },
-            "D:\\asp\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj": {
-              "projectPath": "D:\\asp\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj"
+            "D:\\asp\\bookStoor\\BookStore.Data\\BookStore.Data.csproj": {
+              "projectPath": "D:\\asp\\bookStoor\\BookStore.Data\\BookStore.Data.csproj"
             },
-            "D:\\asp\\BookStore\\BookStore\\BookStore.IOC\\BookStore.IOC.csproj": {
-              "projectPath": "D:\\asp\\BookStore\\BookStore\\BookStore.IOC\\BookStore.IOC.csproj"
+            "D:\\asp\\bookStoor\\BookStore.IOC\\BookStore.IOC.csproj": {
+              "projectPath": "D:\\asp\\bookStoor\\BookStore.IOC\\BookStore.IOC.csproj"
             }
           }
         }

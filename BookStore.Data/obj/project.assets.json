@@ -4733,11 +4733,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\asp\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
+      "projectUniqueName": "D:\\asp\\bookStoor\\BookStore.Data\\BookStore.Data.csproj",
       "projectName": "BookStore.Data",
-      "projectPath": "D:\\asp\\BookStore\\BookStore\\BookStore.Data\\BookStore.Data.csproj",
+      "projectPath": "D:\\asp\\bookStoor\\BookStore.Data\\BookStore.Data.csproj",
       "packagesPath": "C:\\Users\\imani\\.nuget\\packages\\",
-      "outputPath": "D:\\asp\\BookStore\\BookStore\\BookStore.Data\\obj\\",
+      "outputPath": "D:\\asp\\bookStoor\\BookStore.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4759,8 +4759,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\asp\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
-              "projectPath": "D:\\asp\\BookStore\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+            "D:\\asp\\bookStoor\\BookStore.Domain\\BookStore.Domain.csproj": {
+              "projectPath": "D:\\asp\\bookStoor\\BookStore.Domain\\BookStore.Domain.csproj"
             }
           }
         }
