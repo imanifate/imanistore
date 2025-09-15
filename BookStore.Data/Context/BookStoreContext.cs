@@ -18,20 +18,7 @@ namespace BookStore.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
-            // ============================
-            // BaseEntite Configuration
-            // ============================
-            modelBuilder.Entity<BaseEntite>(entity =>
-            {
-                entity.HasKey(e => e.Id);                 // کلید اصلی
-                entity.Property(e => e.Title)
-                      .IsRequired()
-                      .HasMaxLength(100);
-                entity.Property(e => e.IsDelete)
-                      .HasDefaultValue(false);
-            });
+            base.OnModelCreating(modelBuilder);           
 
             // ============================
             // Category Configuration (Self-Referencing)
@@ -63,9 +50,6 @@ namespace BookStore.Data.Context
             });
         }
 
-        internal async Task<List<object>> ToListAsync()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

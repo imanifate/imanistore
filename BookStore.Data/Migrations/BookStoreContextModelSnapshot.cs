@@ -22,41 +22,13 @@ namespace BookStore.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("BookStore.Domain.Models.BaseEntite", b =>
+            modelBuilder.Entity("BookStore.Domain.Models.Book", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
-
-                    b.Property<bool>("IsDelete")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(false);
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("BaseEntite");
-
-                    b.HasDiscriminator().HasValue("BaseEntite");
-
-                    b.UseTphMappingStrategy();
-                });
-
-            modelBuilder.Entity("BookStore.Domain.Models.Book", b =>
-                {
-                    b.HasBaseType("BookStore.Domain.Models.BaseEntite");
 
                     b.Property<string>("Author")
                         .IsRequired()
@@ -71,24 +43,46 @@ namespace BookStore.Data.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("PublicationDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
                     b.HasIndex("CategoryId");
 
-                    b.HasDiscriminator().HasValue("Book");
+                    b.ToTable("Books");
                 });
 
             modelBuilder.Entity("BookStore.Domain.Models.Category", b =>
                 {
-                    b.HasBaseType("BookStore.Domain.Models.BaseEntite");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("ParentId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
                     b.HasIndex("ParentId");
 
-                    b.HasDiscriminator().HasValue("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("BookStore.Domain.Models.Book", b =>

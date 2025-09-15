@@ -11,7 +11,7 @@ namespace BookStore.Aplication.Services.Interfaces
     public interface ICategoryService
     {
         Task<CreatResult> CreateAsync(CreateCategoryViewModel model);
-       Task<List<ListCategoryViewModel>> GetAllAsync();
+       Task<List<GetCategoryViewModel>> GetAllAsync();
       Task<EditCategoryViewModel> GetForEdit(int id);
        Task<EditResult> Edit(EditCategoryViewModel model);
         Task<DeleteResult> Delete(int id);

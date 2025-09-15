@@ -20,4 +20,11 @@
     <ProjectReference Include="..\BookStore.IOC\BookStore.IOC.csproj" />
   </ItemGroup>
 
+	<ItemGroup>
+	  <Content Update="Views\Shared\_AdminFooter.cshtml">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	</ItemGroup>
+
 </Project>

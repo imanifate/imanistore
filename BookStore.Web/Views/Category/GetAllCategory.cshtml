@@ -1,1 +1,43 @@
-﻿
+﻿@using BookStore.Domain.ViewModels.Category
+@model List<GetCategoryViewModel>
+@{
+	ViewData["Title"] = "دسته بندی محصولات";
+}
+
+<section class="app-content-header">
+	<div class="container-fluid">
+		<div class="row my-4">
+			<div class="col-sm-6"><h1>@ViewData["Title"]</h1></div>
+			<div class="col-sm-6">
+				<ol class="breadcrumb float-sm-end">
+					<li class="breadcrumb-item"><a asp-controller="Home" asp-action="AdminPage">خانه</a></li>
+					<li class="breadcrumb-item active">@ViewData["Title"]</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="app-content">
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="card border-primary">
+					<div class="card-body">
+						<div class="mb-3">
+							<a asp-action="CreateCategory" asp-route-categoryId="null" class="btn btn-success btn-lg">
+								افزودن دسته جدید
+							</a>
+						</div>
+						<div class="accordion">
+							@foreach (var item in Model)
+							{
+								@await Component.InvokeAsync("CategoryItem", item)
+							}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

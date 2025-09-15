@@ -20,8 +20,8 @@ namespace BookStore.Aplication.Services.Implimentation
         {
             genericRepository.Add(new Category
             {
-                ParentId = model.ParentId,
-                Title = model.Title,
+                ParentId = model.CategoryId,
+                Title = model.CategoryTitle
             });
 
            await genericRepository.SaveAsync();
@@ -29,17 +29,48 @@ namespace BookStore.Aplication.Services.Implimentation
             return CreatResult.Success; 
         }
 
-        public async Task<List<ListCategoryViewModel>> GetAllAsync()
+        //public async Task<List<GetCategoryViewModel>> GetAllAsync()
+        //{
+        //   List<Category> categoreis = await genericRepository.GetAllAsync();
+
+        //    if (categoreis == null) return null;
+
+        //    return categoreis.Select(c=> new GetCategoryViewModel()
+        //    {
+        //        CategoryTitle = c.Title,
+        //        CategoryId = c.Id,
+        //        ParentId = c.ParentId,
+        //        //ParentTitle = c.Parent,
+        //        ChildrenCount = c.Children.Count,
+        //        IsDeleted = c.IsDelete
+        //    }).ToList();
+        //}
+
+        public async Task<List<GetCategoryViewModel>> GetAllAsync()
         {
-           List<Category> categoreis = await genericRepository.GetAllAsync();
+            List<Category> categories = await genericRepository.GetAllAsync();
 
-            if (categoreis == null) return null;
+            if (categories == null) return null;
 
-            return categoreis.Select(c=> new ListCategoryViewModel()
+            return categories
+                .Where(c => c.ParentId == null) // فقط ریشه‌ها
+                .Select(MapCategoryToViewModelRecursive)
+                .ToList();
+        }
+
+        private GetCategoryViewModel MapCategoryToViewModelRecursive(Category category)
+        {
+            return new GetCategoryViewModel()
             {
-                Title = c.Title,
-                IsDelete = c.IsDelete
-            }).ToList();
+                CategoryId = category.Id,
+                CategoryTitle = category.Title,
+                ParentId = category.ParentId,
+                IsDeleted = category.IsDelete,
+                ChildrenCount = category.Children.Count,
+                Childrens = category.Children
+                    .Select(MapCategoryToViewModelRecursive)
+                    .ToList()
+            };
         }
 
         public async Task<EditCategoryViewModel> GetForEdit(int id)

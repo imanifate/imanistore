@@ -9,11 +9,12 @@ namespace BookStore.Domain.ViewModels.Category
 {
     public class CreateCategoryViewModel
     {
+        public int? CategoryId { get; set; }
         public int? ParentId { get; set; }
-
+        public string? Parent { get; set; }
         [Required]
         [MaxLength(100)]
-        public string Title { get; set; }
+        public string CategoryTitle { get; set; }
 
     }
 }
