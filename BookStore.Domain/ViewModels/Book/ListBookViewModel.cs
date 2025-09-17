@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Domain.ViewModels.Book
 {
-    public class GetBookViewModel
+    public class ListBookViewModel
     {
         public int BookId { get; set; } 
         public int CategoryId { get; set; }

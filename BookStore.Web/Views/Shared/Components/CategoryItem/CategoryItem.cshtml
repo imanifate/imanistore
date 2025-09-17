@@ -76,7 +76,19 @@
 
 					</form>
 				</div>
-				
+				@if (Model.ChildrenCount == 0)
+				{
+					<div class="col-md-3 col-12">
+						<a asp-action="GetAllBookAsync" asp-route-categoryId="@Model.CategoryId"
+						   asp-controller="Book" method="Get" style="display:inline;">
+
+							<button class="btn btn-danger btn-block">
+								<i class="fas fa-trash ml-2"></i> مدیریت کتاب
+							</button>
+
+						</a>
+					</div>
+				}
 			</div>
 			@if (Model.Childrens.Any())
 			{

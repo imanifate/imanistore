@@ -29,28 +29,12 @@ namespace BookStore.Aplication.Services.Implimentation
             return CreatResult.Success; 
         }
 
-        //public async Task<List<GetCategoryViewModel>> GetAllAsync()
-        //{
-        //   List<Category> categoreis = await genericRepository.GetAllAsync();
-
-        //    if (categoreis == null) return null;
-
-        //    return categoreis.Select(c=> new GetCategoryViewModel()
-        //    {
-        //        CategoryTitle = c.Title,
-        //        CategoryId = c.Id,
-        //        ParentId = c.ParentId,
-        //        //ParentTitle = c.Parent,
-        //        ChildrenCount = c.Children.Count,
-        //        IsDeleted = c.IsDelete
-        //    }).ToList();
-        //}
-
+        
         public async Task<List<GetCategoryViewModel>> GetAllAsync()
         {
             List<Category> categories = await genericRepository.GetAllAsync();
 
-            if (categories == null) return null;
+            if (!categories.Any()) return null;
 
             return categories
                 .Where(c => c.ParentId == null) // فقط ریشه‌ها

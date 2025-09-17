@@ -36,7 +36,8 @@ namespace BookStore.Aplication.Services.Implimentation
 
             return books.Select(b => new GetBookViewModel()
             {
-                Title = b.Title,
+                CategoryId =b.CategoryId,
+                BookTitle = b.Title,
                 Author = b.Author,
                 PublicationDate = b.PublicationDate,
                 IsDeleted = b.IsDelete
