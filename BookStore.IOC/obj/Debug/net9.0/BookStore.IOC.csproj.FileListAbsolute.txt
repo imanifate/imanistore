@@ -37,3 +37,23 @@ D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.dll
 D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\refint\BookStore.IOC.dll
 D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.pdb
 D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\ref\BookStore.IOC.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\bin\Debug\net9.0\BookStore.IOC.deps.json
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\bin\Debug\net9.0\BookStore.IOC.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\bin\Debug\net9.0\BookStore.IOC.pdb
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\bin\Debug\net9.0\BookStore.Aplication.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\bin\Debug\net9.0\BookStore.Data.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\bin\Debug\net9.0\BookStore.Domain.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\bin\Debug\net9.0\BookStore.Aplication.pdb
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\bin\Debug\net9.0\BookStore.Data.pdb
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\bin\Debug\net9.0\BookStore.Domain.pdb
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.csproj.AssemblyReference.cache
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.AssemblyInfoInputs.cache
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.AssemblyInfo.cs
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.csproj.CoreCompileInputs.cache
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.sourcelink.json
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\obj\Debug\net9.0\BookStor.189217BA.Up2Date
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\obj\Debug\net9.0\refint\BookStore.IOC.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.pdb
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.IOC\obj\Debug\net9.0\ref\BookStore.IOC.dll

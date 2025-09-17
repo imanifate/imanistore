@@ -6,12 +6,18 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Web.Controllers
 {
-    public class BookController (IBookService bookService): Controller
+    public class BookController: Controller
     {
-        [HttpGet("GetAllBookAsync")]
+        private readonly IBookService _bookService;
+        public BookController(IBookService bookService)
+        {
+            _bookService = bookService;
+        }
+
+        [ActionName("GetAllBookAsync")]
         public async Task<IActionResult> GetAllBookAsync()
         {
-            List<GetBookViewModel> result = await bookService.GetAllAsync();
+            List<GetBookViewModel> result = await _bookService.GetAllAsync();
             return View(result);
         }
 
@@ -29,7 +35,7 @@ namespace BookStore.Web.Controllers
         [HttpPost("CreateBookAsync")]
         public async Task<IActionResult> CreateBookAsync(CreateBookViewModel model)
         {
-            CreatResult result = await bookService.CreatAsync(model);
+            CreatResult result = await _bookService.CreatAsync(model);
             switch (result)
             {
                 case CreatResult.Success:
