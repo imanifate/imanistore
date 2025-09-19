@@ -9,9 +9,9 @@ namespace BookStore.Domain.ViewModels.Book
     public class CreateBookViewModel
     {
         public int CategoryId { get; set; }
-        public string Title { get; set; }
+        public string BookTitle { get; set; }
         public string Author { get; set; }
-       
-        public DateTime PublicationDate { get; set; }
+
+        public DateTime PublicationDate { get; set; } = DateTime.Now;
     }
 }

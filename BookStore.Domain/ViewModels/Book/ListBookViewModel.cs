@@ -8,12 +8,7 @@ namespace BookStore.Domain.ViewModels.Book
 {
     public class ListBookViewModel
     {
-        public int BookId { get; set; } 
         public int CategoryId { get; set; }
-        public string BookTitle { get; set; }
-        public string Author { get; set; }
-        public bool IsDeleted { get; set; }
-        public bool Borrow { get; set; }
-        public DateTime PublicationDate { get; set; }
+        public List<GetBookViewModel> Books { get; set; } = new();
     }
 }

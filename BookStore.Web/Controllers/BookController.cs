@@ -8,6 +8,12 @@ namespace BookStore.Web.Controllers
 {
     public class BookController: Controller
     {
+<<<<<<< HEAD
+        [ActionName("GetAllBookAsync")]
+        public async Task<IActionResult> GetAllBookAsync(int categoryId)
+        {
+            ListBookViewModel result = await bookService.GetAllAsync(categoryId);
+=======
         private readonly IBookService _bookService;
         public BookController(IBookService bookService)
         {
@@ -18,11 +24,13 @@ namespace BookStore.Web.Controllers
         public async Task<IActionResult> GetAllBookAsync()
         {
             List<GetBookViewModel> result = await _bookService.GetAllAsync();
+>>>>>>> 7de73b1b9159c7d47ead5d6ffe0cfc72b459b5ad
             return View(result);
         }
 
 
-        [HttpGet("CreateBookAsync")]
+        [ActionName("CreateBookAsync")]
+        [HttpGet]
         public async Task<IActionResult> CreateBookAsync(int categoryId)
         {
             var model = new CreateBookViewModel()
@@ -32,10 +40,16 @@ namespace BookStore.Web.Controllers
             return View(model);
         }
 
-        [HttpPost("CreateBookAsync")]
+        [ActionName("CreateBookAsync")]
+        [HttpPost]
         public async Task<IActionResult> CreateBookAsync(CreateBookViewModel model)
         {
+<<<<<<< HEAD
+            if(!ModelState.IsValid) return View(model);
+            CreatResult result = await bookService.CreatAsync(model);
+=======
             CreatResult result = await _bookService.CreatAsync(model);
+>>>>>>> 7de73b1b9159c7d47ead5d6ffe0cfc72b459b5ad
             switch (result)
             {
                 case CreatResult.Success:
@@ -49,7 +63,7 @@ namespace BookStore.Web.Controllers
                         break;
                     }
             }
-            return View("CreateCategory");
+            return View("CreateBookAsync");
         }
     }
 }

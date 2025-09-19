@@ -11,7 +11,7 @@ namespace BookStore.Aplication.Services.Interfaces
     public interface IBookService
     {
         Task<CreatResult> CreatAsync(CreateBookViewModel model);
-        Task<List<GetBookViewModel>>? GetAllAsync();
+        Task<ListBookViewModel>? GetAllAsync(int categoryId);
         Task<List<GetBookViewModel>>? GetAllFreeAsync();
         Task<List<GetBookViewModel>>? SearchTitleAsync(string title);
         Task<EditBookViewModel>? GetForEditAsync(int id);

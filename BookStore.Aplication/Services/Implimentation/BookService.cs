@@ -18,7 +18,7 @@ namespace BookStore.Aplication.Services.Implimentation
             genericRepository.Add(new Book
             {
                 CategoryId = model.CategoryId,
-                Title = model.Title,
+                Title = model.BookTitle,
                 Author = model.Author,
                 PublicationDate = model.PublicationDate
             });
@@ -27,23 +27,27 @@ namespace BookStore.Aplication.Services.Implimentation
 
             return CreatResult.Success;
         }
-
-        public async Task<List<GetBookViewModel>>? GetAllAsync()
+       
+        public async Task<ListBookViewModel>? GetAllAsync(int categoryId)
         {
-            List<Book> books =await genericRepository.GetAllAsync();
+            List<Book> books = await genericRepository.GetAllAsync();
 
             if (books == null) return null;
-
-            return books.Select(b => new GetBookViewModel()
+            var model = new ListBookViewModel
             {
-                CategoryId =b.CategoryId,
-                BookTitle = b.Title,
-                Author = b.Author,
-                PublicationDate = b.PublicationDate,
-                IsDeleted = b.IsDelete
+                CategoryId = categoryId,
+                Books = books.Select(b => new GetBookViewModel()
+                {
+                    CategoryId = b.CategoryId,
+                    BookTitle = b.Title,
+                    Author = b.Author,
+                    PublicationDate = b.PublicationDate,
+                    IsDeleted = b.IsDelete
 
-            }).ToList();
-        }
+                }).ToList()
+            };
+            return model;
+            }
 
         //public async Task<List<GetBookViewModel>>? GetAllFreeAsync()
         //{
@@ -132,5 +136,7 @@ namespace BookStore.Aplication.Services.Implimentation
         {
             throw new NotImplementedException();
         }
+
+        
     }
 }

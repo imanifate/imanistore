@@ -1,5 +1,5 @@
 ﻿@using BookStore.Domain.ViewModels.Book
-@model List<GetBookViewModel>
+@model ListBookViewModel
 @{
     ViewData["Title"] = "لیست کتابها";
 }
@@ -26,7 +26,7 @@
             <div class="col-12">
                 <div class="card mb-4">
                     <div class="card-header">
-                        <a asp-action="CreateBookAsync" asp-route-categoryId="CategoryId" class="btn btn-primary">
+                        <a asp-action="CreateBookAsync" asp-route-categoryId="@Model.CategoryId" class="btn btn-primary">
                             <i class="fas fa-plus ml-2"></i>افزودن کتاب جدید
                         </a>
                     </div>
@@ -46,12 +46,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @if (Model != null && Model.Any())
+                                @if (Model != null && Model.Books.Any())
                                 {
-                                    @foreach (var item in Model)
+                                    @foreach (var item in Model.Books)
                                     {
                                         <tr>
-                                            <td>@(Model.IndexOf(item) + 1)</td>
+                                            <td>@(Model.Books.IndexOf(item) + 1)</td>
                                             <td>@item.PublicationDate</td>
                                             <td>@item.BookTitle</td>
                                             <td>@item.Author</td>
