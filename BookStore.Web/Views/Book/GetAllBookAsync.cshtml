@@ -10,7 +10,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                     <li class="breadcrumb-item"><a asp-controller="Home" asp-action="AdminPage">خانه</a></li>
-                    <li class="breadcrumb-item"><a asp-controller="Category" asp-action="GetAll">لیست دسته بندی</a></li>
+                    <li class="breadcrumb-item"><a asp-controller="Book" asp-action="GetAllBookAsync">لیست دسته بندی</a></li>
                     <li class="breadcrumb-item active" aria-current="page">@ViewData["Title"]</li>
                 </ol>
             </div>
@@ -38,6 +38,7 @@
                                 <tr>
                                     <th style="width: 50px">#</th>
                                     <th>تاریخ انتشار</th>
+                                    <th>نام ناشر</th>
                                     <th>عنوان کتاب</th>
                                     <th>نویسنده</th>
                                     <th>عمانت داده شده؟</th>
@@ -53,6 +54,7 @@
                                         <tr>
                                             <td>@(Model.Books.IndexOf(item) + 1)</td>
                                             <td>@item.PublicationDate</td>
+                                            <td>@item.Publisher</td>
                                             <td>@item.BookTitle</td>
                                             <td>@item.Author</td>
                                             <td><i class="fas @(item.Borrow ? "fa-check text-success" : "fa-times text-danger")"></i></td>

@@ -1,14 +1,3 @@
-D:\asp\BookStore\BookStore\BookStore.Domain\bin\Debug\net9.0\BookStore.Domain.deps.json
-D:\asp\BookStore\BookStore\BookStore.Domain\bin\Debug\net9.0\BookStore.Domain.dll
-D:\asp\BookStore\BookStore\BookStore.Domain\bin\Debug\net9.0\BookStore.Domain.pdb
-D:\asp\BookStore\BookStore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
-D:\asp\BookStore\BookStore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.AssemblyInfoInputs.cache
-D:\asp\BookStore\BookStore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.AssemblyInfo.cs
-D:\asp\BookStore\BookStore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.csproj.CoreCompileInputs.cache
-D:\asp\BookStore\BookStore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.dll
-D:\asp\BookStore\BookStore\BookStore.Domain\obj\Debug\net9.0\refint\BookStore.Domain.dll
-D:\asp\BookStore\BookStore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.pdb
-D:\asp\BookStore\BookStore\BookStore.Domain\obj\Debug\net9.0\ref\BookStore.Domain.dll
 D:\asp\bookStoor\BookStore.Domain\bin\Debug\net9.0\BookStore.Domain.deps.json
 D:\asp\bookStoor\BookStore.Domain\bin\Debug\net9.0\BookStore.Domain.dll
 D:\asp\bookStoor\BookStore.Domain\bin\Debug\net9.0\BookStore.Domain.pdb
@@ -21,15 +10,3 @@ D:\asp\bookStoor\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.dll
 D:\asp\bookStoor\BookStore.Domain\obj\Debug\net9.0\refint\BookStore.Domain.dll
 D:\asp\bookStoor\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.pdb
 D:\asp\bookStoor\BookStore.Domain\obj\Debug\net9.0\ref\BookStore.Domain.dll
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\bin\Debug\net9.0\BookStore.Domain.deps.json
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\bin\Debug\net9.0\BookStore.Domain.dll
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\bin\Debug\net9.0\BookStore.Domain.pdb
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.AssemblyInfoInputs.cache
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.AssemblyInfo.cs
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.csproj.CoreCompileInputs.cache
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.sourcelink.json
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.dll
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\obj\Debug\net9.0\refint\BookStore.Domain.dll
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\obj\Debug\net9.0\BookStore.Domain.pdb
-C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Domain\obj\Debug\net9.0\ref\BookStore.Domain.dll

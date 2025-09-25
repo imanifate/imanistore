@@ -9,11 +9,11 @@ namespace BookStore.Domain.Models
 {
     public class BaseEntite
     {
-        
         public int Id { get; set; }
-
         public bool IsDelete { get; set; }
-        public string Title { get; set; }
+        public string Title { get; set; } = string.Empty;
+        public DateTime DateAt { get; set; }= DateTime.Now;
+        public DateTime? UpDateAt { get; set; }
 
     }
 }

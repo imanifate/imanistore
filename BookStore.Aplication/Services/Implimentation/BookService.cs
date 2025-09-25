@@ -20,7 +20,9 @@ namespace BookStore.Aplication.Services.Implimentation
                 CategoryId = model.CategoryId,
                 Title = model.BookTitle,
                 Author = model.Author,
-                PublicationDate = model.PublicationDate
+                PublicationDate = model.PublicationDate,
+                Publisher = model.Publisher
+                
             });
 
            await genericRepository.SaveAsync();
@@ -30,7 +32,8 @@ namespace BookStore.Aplication.Services.Implimentation
        
         public async Task<ListBookViewModel>? GetAllAsync(int categoryId)
         {
-            List<Book> books = await genericRepository.GetAllAsync();
+            List<Book> Allbooks = await genericRepository.GetAllAsync();
+            List<Book> books = Allbooks.Where(c => c.CategoryId == categoryId).ToList();
 
             if (books == null) return null;
             var model = new ListBookViewModel
@@ -104,7 +107,7 @@ namespace BookStore.Aplication.Services.Implimentation
 
             book.Title = model.Title;
             book.Author = model.Author;
-            book.Borrow = model.Borrow;
+          
             book.IsDelete = model.IsDeleted;
 
             genericRepository.Update(book);

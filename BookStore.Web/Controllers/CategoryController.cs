@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Web.Controllers
 {
-    public class CategoryController (ICategoryService categoryService) : Controller
+    public class CategoryController (ICategoryService categoryService , ILogger<CategoryController> logger) : Controller
     {
         [HttpGet("GetAllCategory")]
         public async Task<IActionResult> GetAllCategory()
@@ -19,6 +19,8 @@ namespace BookStore.Web.Controllers
         [HttpGet("CreateCategory")]
         public IActionResult CreateCategory(int? categoryId)
         {
+            logger.LogInformation("CreateCategory GET called. CategoryId={CategoryId}", categoryId);
+
             var model = new CreateCategoryViewModel
             {
                 CategoryId = categoryId
@@ -30,7 +32,15 @@ namespace BookStore.Web.Controllers
         [HttpPost("CreateCategory")]
         public async Task<IActionResult> CreateCategory(CreateCategoryViewModel model)
         {
-            CreatResult result =await categoryService.CreateAsync(model);
+            if (!ModelState.IsValid)
+            {
+                logger.LogWarning("CreateCategory POST called with invalid model");
+                return View(model);
+            }
+
+            try
+            {
+                CreatResult result =await categoryService.CreateAsync(model);
 
             switch (result)
             {
@@ -45,8 +55,15 @@ namespace BookStore.Web.Controllers
                         break;
                     }
             }
-            return View("CreateCategory");
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Unexpected error while creating category. Name={Name}", model.CategoryTitle);
+            }
+
+            return View("CreateCategory", model);
         }
+         
 
         //    [HttpGet("GetForEdit")]
         //    public IActionResult GetForEdit(int id)

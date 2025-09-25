@@ -6,25 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Web.Controllers
 {
-    public class BookController: Controller
+    public class BookController(IBookService bookService , ILogger<BookController> logger): Controller
     {
-<<<<<<< HEAD
         [ActionName("GetAllBookAsync")]
         public async Task<IActionResult> GetAllBookAsync(int categoryId)
         {
             ListBookViewModel result = await bookService.GetAllAsync(categoryId);
-=======
-        private readonly IBookService _bookService;
-        public BookController(IBookService bookService)
-        {
-            _bookService = bookService;
-        }
 
-        [ActionName("GetAllBookAsync")]
-        public async Task<IActionResult> GetAllBookAsync()
-        {
-            List<GetBookViewModel> result = await _bookService.GetAllAsync();
->>>>>>> 7de73b1b9159c7d47ead5d6ffe0cfc72b459b5ad
             return View(result);
         }
 
@@ -33,6 +21,8 @@ namespace BookStore.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> CreateBookAsync(int categoryId)
         {
+            logger.LogInformation("BookCategory GET called. CategoryId={CategoryId}", categoryId);
+
             var model = new CreateBookViewModel()
             {
                 CategoryId = categoryId
@@ -44,12 +34,16 @@ namespace BookStore.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateBookAsync(CreateBookViewModel model)
         {
-<<<<<<< HEAD
-            if(!ModelState.IsValid) return View(model);
+
+            if (!ModelState.IsValid)
+            {
+                logger.LogWarning("CreateBook POST called with invalid model");
+                return View(model);
+            }
+            try
+            { 
             CreatResult result = await bookService.CreatAsync(model);
-=======
-            CreatResult result = await _bookService.CreatAsync(model);
->>>>>>> 7de73b1b9159c7d47ead5d6ffe0cfc72b459b5ad
+
             switch (result)
             {
                 case CreatResult.Success:
@@ -62,6 +56,11 @@ namespace BookStore.Web.Controllers
                         // AlertMessage("ثبت سوال با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
                         break;
                     }
+            }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Unexpected error while creating book. Name={Name}", model.BookTitle);
             }
             return View("CreateBookAsync");
         }

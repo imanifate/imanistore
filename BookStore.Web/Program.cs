@@ -4,9 +4,18 @@ using BookStore.Data.Context;
 using BookStore.Data.Repositores;
 using BookStore.Domain.Contracts;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using Store.IOC;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+//  ‰Ÿ?„ Serilog »—«? ‰Ê‘ ‰ œ— ›«?·
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day) // Â— —Ê“ ?ò ›«?· Ãœ?œ
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -22,6 +31,7 @@ builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 

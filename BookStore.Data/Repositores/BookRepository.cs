@@ -13,8 +13,9 @@ namespace BookStore.Data.Repositores
     {
         public List<Book> GetAllByBorrow()
         {
-            return _context.Books.Where(c => c.Borrow == false).ToList();
+            throw new NotImplementedException();
         }
+
         public List<Book> SerchByTitle(string title)
         {
           return  _context.Books.Where(b => b.Title == title).ToList();
