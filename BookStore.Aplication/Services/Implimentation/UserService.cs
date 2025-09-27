@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BookStore.Aplication.Services.Interfaces;
 using BookStore.Domain.Contracts;
 using BookStore.Domain.Enums;
 using BookStore.Domain.Models;
@@ -12,7 +13,7 @@ namespace BookStore.Aplication.Services.Implimentation
 {
     public class UserService (IGenericRepository<User> genericRepository ): IUserService
     {
-        public async Task<CreatResult> RegisterAsync(RegisterUserViewModl model)
+        public async Task<Result> RegisterAsync(RegisterUserViewModl model)
         {
             genericRepository.Add(new User
             {
@@ -24,7 +25,9 @@ namespace BookStore.Aplication.Services.Implimentation
                
             });
             genericRepository.SaveAsync();
-            return CreatResult.Success;
+            return Result.Success;
         }
+
+      
     }
 }

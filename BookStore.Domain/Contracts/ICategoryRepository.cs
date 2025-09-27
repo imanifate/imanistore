@@ -9,6 +9,6 @@ namespace BookStore.Domain.Contracts
 {
     public interface ICategoryRepository
     {
-        List<Category> GetAll();
+       
     }
 }

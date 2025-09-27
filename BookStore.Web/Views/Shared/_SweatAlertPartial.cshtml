@@ -1,0 +1,10 @@
+﻿@if (TempData["Alert"] != null)
+{
+    <script>
+        document.addEventListener("DOMContentLoaded", function()
+        {
+            const alertData = JSON.parse('@Html.Raw(TempData["Alert"])');
+            Swal.fire({ title: alertData.Title, text: alertData.Text, icon: alertData.Icon});
+        });
+    </script>
+}

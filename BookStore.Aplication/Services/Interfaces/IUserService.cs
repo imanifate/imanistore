@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using BookStore.Domain.Enums;
 using BookStore.Domain.ViewModels.User;
 
-namespace BookStore.Aplication.Services.Implimentation
+namespace BookStore.Aplication.Services.Interfaces
 {
     public interface  IUserService
     {
-        Task<CreatResult> RegisterAsync(RegisterUserViewModl model);
+        Task<Result> RegisterAsync(RegisterUserViewModl model);
     }
 }

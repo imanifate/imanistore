@@ -16,7 +16,7 @@ namespace BookStore.Aplication.Services.Implimentation
     public class CategoryService(IGenericRepository<Category> genericRepository) : ICategoryService
     {
        
-        public async Task<CreatResult> CreateAsync(CreateCategoryViewModel model)
+        public async Task<Result> CreateAsync(CreateCategoryViewModel model)
         {
             genericRepository.Add(new Category
             {
@@ -26,7 +26,7 @@ namespace BookStore.Aplication.Services.Implimentation
 
            await genericRepository.SaveAsync();
 
-            return CreatResult.Success; 
+            return Result.Success; 
         }
 
         
@@ -70,11 +70,11 @@ namespace BookStore.Aplication.Services.Implimentation
 
         }
 
-        public async Task<EditResult> Edit(EditCategoryViewModel model)
+        public async Task<Result> Edit(EditCategoryViewModel model)
         {
             Category category = await genericRepository.GetByIdAsync(model.Id);
 
-            if (category == null) return EditResult.Null;
+            if (category == null) return Result.Null;
 
             category.Title = model.Title;
             category.IsDelete = model.IsDeleted;
@@ -82,13 +82,12 @@ namespace BookStore.Aplication.Services.Implimentation
             genericRepository.Update(category);
            await genericRepository.SaveAsync();
 
-            return EditResult.Success;
+            return Result.Success;
         }
-        public Task<DeleteResult> Delete(int id)
+
+        public Task<Result> Delete(int id)
         {
             throw new NotImplementedException();
         }
-
-      
     }
 }

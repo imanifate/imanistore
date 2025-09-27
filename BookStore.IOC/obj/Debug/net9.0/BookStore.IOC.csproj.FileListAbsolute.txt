@@ -1,9 +1,3 @@
-D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.csproj.AssemblyReference.cache
-D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.GeneratedMSBuildEditorConfig.editorconfig
-D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.AssemblyInfoInputs.cache
-D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.AssemblyInfo.cs
-D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.csproj.CoreCompileInputs.cache
-D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.sourcelink.json
 D:\asp\bookStoor\BookStore.IOC\bin\Debug\net9.0\BookStore.IOC.deps.json
 D:\asp\bookStoor\BookStore.IOC\bin\Debug\net9.0\BookStore.IOC.dll
 D:\asp\bookStoor\BookStore.IOC\bin\Debug\net9.0\BookStore.IOC.pdb
@@ -13,6 +7,12 @@ D:\asp\bookStoor\BookStore.IOC\bin\Debug\net9.0\BookStore.Domain.dll
 D:\asp\bookStoor\BookStore.IOC\bin\Debug\net9.0\BookStore.Aplication.pdb
 D:\asp\bookStoor\BookStore.IOC\bin\Debug\net9.0\BookStore.Data.pdb
 D:\asp\bookStoor\BookStore.IOC\bin\Debug\net9.0\BookStore.Domain.pdb
+D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.csproj.AssemblyReference.cache
+D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.GeneratedMSBuildEditorConfig.editorconfig
+D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.AssemblyInfoInputs.cache
+D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.AssemblyInfo.cs
+D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.csproj.CoreCompileInputs.cache
+D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.sourcelink.json
 D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStor.189217BA.Up2Date
 D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\BookStore.IOC.dll
 D:\asp\bookStoor\BookStore.IOC\obj\Debug\net9.0\refint\BookStore.IOC.dll

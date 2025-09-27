@@ -1,0 +1,70 @@
+﻿@using BookStore.Domain.ViewModels
+@model LoginViewModel
+
+@{
+	ViewData["Title"] = "ورود به حساب کاربری";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+	<div class="container-fluid">
+		<div class="row mb-2">
+			<div class="col-sm-6">
+				<h1>@ViewData["Title"]</h1>
+			</div>
+			<div class="col-sm-6">
+				<ol class="breadcrumb float-sm-left">
+					<li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">خانه</a></li>
+					<li class="breadcrumb-item"><a asp-controller="Category" asp-action="GetAllCategory"> ورود به حساب کاربری</a></li>
+					<li class="breadcrumb-item active">@ViewData["Title"]</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="card card-primary">
+					<div class="card-header">
+						<h3 class="card-title">ورود</h3>
+					</div>
+
+					<form asp-action="LoginAsync" asp-controller="Account" method="post">
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="UserNameOrEmail"></label>
+								<input asp-for="UserNameOrEmail" type="text"
+								class="form-control" placeholder=" ایمیل یا نام کاربری خود را وارد کنید">
+							</div>
+
+							<div class="form-group">
+								<label asp-for="Password"></label>
+								<input asp-for="Password" type="text"
+									   class="form-control" placeholder=" رمز عبور خود را وارد کنید">
+							</div>
+
+							<div class="m-b-20">
+								<label class="stext-111 cl2 plh3 p-l-62 p-r-30">
+									<input asp-for="RemmberMe" type="checkbox" name="RememberMe" class="checkbox-inline">
+									مرا به خاطر بسپار
+								</label>
+						</div>
+						<div class="card-footer">
+							<button type="submit" class="btn btn-primary">ورود</button>
+						</div>
+							<div class="form-element-row m-b-20 m-t-20 txt-center">
+								<a asp-action="ForgetPassword" asp-controller="Account" class="link">فراموشی رمز</a>
+							</div>
+					</form>
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>

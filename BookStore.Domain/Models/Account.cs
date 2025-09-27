@@ -10,7 +10,7 @@ namespace BookStore.Domain.Models
     {
         public int UserId { get; set; }
         public User User { get; set; }
-        public string PasswordHash { get; set; } = string.Empty;
+        public string PasswordHash { get; set; } 
         public string Email { get; set; }
         public bool IsAdmin { get; set; }
         public bool IsActive { get; set; }

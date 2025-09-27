@@ -13,7 +13,7 @@ namespace BookStore.Aplication.Services.Implimentation
 {
     public class BookService(IGenericRepository<Book> genericRepository) : IBookService
     {
-        public async Task<CreatResult> CreatAsync(CreateBookViewModel model)
+        public async Task<Result> CreatAsync(CreateBookViewModel model)
         {
             genericRepository.Add(new Book
             {
@@ -27,7 +27,7 @@ namespace BookStore.Aplication.Services.Implimentation
 
            await genericRepository.SaveAsync();
 
-            return CreatResult.Success;
+            return Result.Success;
         }
        
         public async Task<ListBookViewModel>? GetAllAsync(int categoryId)
@@ -99,11 +99,11 @@ namespace BookStore.Aplication.Services.Implimentation
             };
         }
 
-        public async Task<EditResult> EditAsync(EditBookViewModel model)
+        public async Task<Result> EditAsync(EditBookViewModel model)
         {
             Book book =await genericRepository.GetByIdAsync(model.Id);
 
-            if (book == null) return EditResult.Null;
+            if (book == null) return Result.Null;
 
             book.Title = model.Title;
             book.Author = model.Author;
@@ -113,21 +113,21 @@ namespace BookStore.Aplication.Services.Implimentation
             genericRepository.Update(book);
             await genericRepository.SaveAsync();
 
-            return EditResult.Success;
+            return Result.Success;
         }
 
-        public async Task<EditResult> DeleteAsync(int id)
+        public async Task<Result> DeleteAsync(int id)
         {
             Book book =await genericRepository.GetByIdAsync(id);
 
-            if(book == null) return EditResult.Null;
+            if(book == null) return Result.Null;
 
             book.IsDelete = true;
 
             genericRepository.Update(book);
             await genericRepository.SaveAsync();
 
-            return EditResult.Success;
+            return Result.Success;
         }
 
         public Task<List<GetBookViewModel>>? GetAllFreeAsync()

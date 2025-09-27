@@ -1,8 +1,9 @@
-using BookStore.Aplication.Services.Implimentation;
+ï»¿using BookStore.Aplication.Services.Implimentation;
 using BookStore.Aplication.Services.Interfaces;
 using BookStore.Data.Context;
 using BookStore.Data.Repositores;
 using BookStore.Domain.Contracts;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Store.IOC;
@@ -10,15 +11,27 @@ using Store.IOC;
 var builder = WebApplication.CreateBuilder(args);
 
 
-// ÊäÙ?ã Serilog ÈÑÇ? äæÔÊä ÏÑ ÝÇ?á
+// ØªÙ†Ø¸ÛŒÙ… Serilog Ø¨Ø±Ø§ÛŒ Ù†ÙˆØ´ØªÙ† Ø¯Ø± ÙØ§ÛŒÙ„
 Log.Logger = new LoggerConfiguration()
-    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day) // åÑ ÑæÒ ?˜ ÝÇ?á ÌÏ?Ï
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day) // Ù‡Ø± Ø±ÙˆØ² ÛŒÚ© ÙØ§ÛŒÙ„ Ø¬Ø¯ÛŒØ¯
     .CreateLogger();
 
 builder.Host.UseSerilog();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+}).AddCookie(options =>
+{
+    options.LoginPath = "/Login";
+    options.LogoutPath = "/Logout";
+    options.ExpireTimeSpan = TimeSpan.FromDays(1);
+});
 
 builder.Services.AddDbContext<BookStoreContext>(options =>
 {
@@ -32,6 +45,8 @@ builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 
 var app = builder.Build();
 

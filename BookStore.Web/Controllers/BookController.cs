@@ -42,16 +42,16 @@ namespace BookStore.Web.Controllers
             }
             try
             { 
-            CreatResult result = await bookService.CreatAsync(model);
+            Result result = await bookService.CreatAsync(model);
 
             switch (result)
             {
-                case CreatResult.Success:
+                case Result.Success:
                     {
                         // AlertMessage("ثبت سوال با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
                         return RedirectToAction("GetAllBookAsync");
                     }
-                case CreatResult.Error:
+                case Result.Error:
                     {
                         // AlertMessage("ثبت سوال با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
                         break;
