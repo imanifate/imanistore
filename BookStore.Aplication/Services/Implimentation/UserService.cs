@@ -13,21 +13,26 @@ namespace BookStore.Aplication.Services.Implimentation
 {
     public class UserService (IGenericRepository<User> genericRepository ): IUserService
     {
-        public async Task<Result> RegisterAsync(RegisterUserViewModl model)
+        public async Task<RegisterResultViewModl> RegisterAsync(RegisterUserViewModl model)
         {
-            genericRepository.Add(new User
+            User user = new User
             {
                 Title = model.FullName,
                 DateAt = DateTime.Now,
                 IsDelete = false,
                 NationalCode = model.NationalCode,
                 PhoneNumber = model.PhoneNumber
-               
-            });
-            genericRepository.SaveAsync();
-            return Result.Success;
-        }
 
-      
+            };
+                   genericRepository.Add(user);
+            await  genericRepository.SaveAsync();
+
+            return new RegisterResultViewModl
+            {
+                Status = Result.Success,
+                UserId = user.Id
+            };
+        }
+            
     }
 }

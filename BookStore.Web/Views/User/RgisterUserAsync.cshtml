@@ -1,38 +1,68 @@
 ﻿@using BookStore.Domain.ViewModels.User
 @model RegisterUserViewModl
 
-<section class="bg-white" style="height:80px;"></section>
-<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-01.jpg');">
-	<h2 class="ltext-105 cl0 txt-center">
-		ثبت نام
-	</h2>
-</section>
-<section class="bg0 p-t-104 p-b-116">
-	<div class="container">
-		<div class="flex-w flex-c-m">
-			<form asp-controller="User" asp-action="RgisterUserAsync" method="post" class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
-				<h4 class="mtext-105 cl2 txt-center p-b-30">ثبت نام</h4>
+@{
+	ViewData["Title"] = "ثبت نام";
+}
 
-				<div class="bor8 m-b-20 how-pos4-parent">
-					<input asp-for="FullName" class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" placeholder="نام و نام خانوادگی">
-					<img class="how-pos4 pointer-none" src="images/icons/icon-email.png">
-					<span asp-validation-for="FullName" class="inner-text text-danger"></span>
-				</div>
-				<div class="bor8 m-b-20 how-pos4-parent">
-					<input asp-for="PhoneNumber" class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" placeholder="شماره تلفن">
-					<img class="how-pos4 pointer-none" src="images/icons/icon-email.png">
-					<span asp-validation-for="PhoneNumber" class="inner-text text-danger"></span>
-				</div>
-				<div class="bor8 m-b-20 how-pos4-parent">
-					<input asp-for="NationalCode" class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" placeholder="کدملی">
-					<img class="how-pos4 pointer-none" src="images/icons/icon-email.png">
-					<span asp-validation-for="NationalCode" class="inner-text text-danger"></span>
-				</div>
-
-				<button type="submit" class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer" aria-label="ورود به سیستم">
-					ثبت نام
-				</button>
-			</form>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+	<div class="container-fluid">
+		<div class="row mb-2">
+			<div class="col-sm-6">
+				<h1>@ViewData["Title"]</h1>
+			</div>
+			<div class="col-sm-6">
+				<ol class="breadcrumb float-sm-left">
+					<li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">خانه</a></li>
+					<li class="breadcrumb-item active">@ViewData["Title"]</li>
+				</ol>
+			</div>
 		</div>
+	</div>
+</section>
+
+<section class="content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="card card-primary">
+					<div class="card-header">
+						<h3 class="card-title">ثبت نام</h3>
+					</div>
+
+					<form asp-action="RgisterUserAsync" method="post">
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="NationalCode"></label>
+								<input asp-for="NationalCode" type="text" class="form-control" placeholder="کد ملی خود را وارد کنید">
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="FullName" ></label>
+								<input asp-for="FullName" type="text" class="form-control" placeholder="نام و نام خانوادگی خود را وارد کنید">
+							</div>
+						</div>
+												<div class="card-body">
+							<div class="form-group">
+								<label asp-for="PhoneNumber"></label>
+								<input asp-for="PhoneNumber" type="text" class="form-control" placeholder="شماره تلفن خود را وارد کنید">
+							</div>
+						</div>
+						<div class="card-footer">
+							<button type="submit" class="btn btn-primary">ثبت</button>
+						</div>
+
+					</form>
+				</div>
+
+			</div>
+
+
+		</div>
+
 	</div>
 </section>

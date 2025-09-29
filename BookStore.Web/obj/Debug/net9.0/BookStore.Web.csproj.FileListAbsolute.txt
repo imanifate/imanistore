@@ -1050,6 +1050,8 @@ D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\5arx719x0j-ndefhrpy96
 D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\24w9e6z5ef-qnsof94kv4.gz
 D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\5av7bkdbq9-mhqnyv62h4.gz
 D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\arnp0r3ojt-opg1twx2qw.gz
+D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\yz3924uefi-u3lvlll5kr.gz
+D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\9oym8rgrvz-u3lvlll5kr.gz
 D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\staticwebassets.build.json
 D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\staticwebassets.build.json.cache
 D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\staticwebassets.development.json
@@ -1061,5 +1063,3 @@ D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\refint\BookStore.Web.dll
 D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\BookStore.Web.pdb
 D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\BookStore.Web.genruntimeconfig.cache
 D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\ref\BookStore.Web.dll
-D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\yz3924uefi-u3lvlll5kr.gz
-D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\9oym8rgrvz-u3lvlll5kr.gz

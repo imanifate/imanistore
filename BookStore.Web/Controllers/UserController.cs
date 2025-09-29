@@ -21,10 +21,10 @@ namespace BookStore.Web.Controllers
         {
             if (!ModelState.IsValid) return View(model);
 
-            Result result = await userService.RegisterAsync(model);
-            if (result == Result.Success)
+            RegisterResultViewModl result = await userService.RegisterAsync(model);
+            if (result.Status == Result.Success)
             {
-                return RedirectToAction("CreatAccountAsync", "Account", new { UserId = model.UserId });
+                return RedirectToAction("CreatAccountAsync", "Account", new { UserId = result.UserId });
             }
             return View();
         }

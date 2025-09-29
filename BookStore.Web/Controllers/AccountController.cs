@@ -19,9 +19,13 @@ namespace BookStore.Web.Controllers
     {
         [ActionName("CreatAccountAsync")]
         [HttpGet]
-        public IActionResult CreatAccountAsync()
+        public IActionResult CreatAccountAsync(int userId)
         {
-            return View();
+
+            return View(new AccountViewModl
+            {
+                UserId = userId,
+            });
         }
         [ActionName("CreatAccountAsync")]
         [HttpPost]
@@ -75,7 +79,7 @@ namespace BookStore.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Active(ActiveViewModel model)
         {
-            if (ModelState.IsValid) return View(nameof(Active));
+            if (!ModelState.IsValid) return View(nameof(Active));
 
          Result result =await  accountService.AccountActiveAsync(model.ActiveCode);
             switch (result)

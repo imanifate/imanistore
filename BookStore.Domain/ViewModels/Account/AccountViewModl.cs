@@ -9,13 +9,15 @@ namespace BookStore.Domain.ViewModels.Account
 {
     public class AccountViewModl
     {
+        public int UserId { get; set; }
+
         [Display(Name ="نام کاربری را وارد کنید")]
         [Required(ErrorMessage = "لطفا نام کاربری را وارد کنید")]
         public string UserName { get; set; }
 
         [Display(Name = "رمز را وارد کنید")]
         [Required(ErrorMessage = "لطفا رمز را  وارد کنید")]
-        public string PasswordHash { get; set; }
+        public string Password { get; set; }
 
         [Display(Name = " تکرار پسورد")]
         [MaxLength(200)]
@@ -26,8 +28,6 @@ namespace BookStore.Domain.ViewModels.Account
         [Display(Name = " ایمیل را وارد کنید")]
         [Required(ErrorMessage = "لطفا ایمیل را  وارد کنید")]
         public string Email { get; set; }
-        public bool IsAdmin { get; set; }=false;
-        public bool IsActive { get; set; }=true;
         public string ActiveCode { get; set; } = string.Empty;
 
         [Display(Name = " قوانین را میپذیرم")]

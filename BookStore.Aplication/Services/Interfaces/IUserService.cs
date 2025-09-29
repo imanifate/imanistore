@@ -10,6 +10,6 @@ namespace BookStore.Aplication.Services.Interfaces
 {
     public interface  IUserService
     {
-        Task<Result> RegisterAsync(RegisterUserViewModl model);
+        Task<RegisterResultViewModl> RegisterAsync(RegisterUserViewModl model);
     }
 }

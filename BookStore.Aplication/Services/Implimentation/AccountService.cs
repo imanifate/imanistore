@@ -9,6 +9,7 @@ using BookStore.Aplication.Utilities;
 using BookStore.Data.Migrations;
 using BookStore.Domain.ViewModels;
 using System.Threading.Tasks;
+using System.ComponentModel.Design;
 
 namespace BookStore.Aplication.Services.Implimentation
 {
@@ -23,9 +24,10 @@ namespace BookStore.Aplication.Services.Implimentation
             if(await accountRepository.ExistUserNameAsync(model.UserName)) return Result.UsernaemDuplicated;
             genericRepository.Add(new Account
             {
+                UserId = model.UserId,
                 Title = model.UserName,
                 Email = model.Email,
-                PasswordHash = PasswordHasher.EncodePasswordMd5(model.PasswordHash),
+                PasswordHash = PasswordHasher.EncodePasswordMd5(model.Password),
                 ActiveCode = model.ActiveCode
                
             });
@@ -43,7 +45,8 @@ namespace BookStore.Aplication.Services.Implimentation
                 genericRepository.Update(account);
                 await genericRepository.SaveAsync();
             }
-            return Result.Error;
+            return Result.Success;
+            
         }
 
         public async Task<Account?> LoginAsync(LoginViewModel login)

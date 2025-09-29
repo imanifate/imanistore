@@ -28,6 +28,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/asp/bookStoor/BookStore.Web/Views/Account/Active.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY3RpdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/asp/bookStoor/BookStore.Web/Views/Account/CreatAccountAsync.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdEFjY291bnRBc3luYy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

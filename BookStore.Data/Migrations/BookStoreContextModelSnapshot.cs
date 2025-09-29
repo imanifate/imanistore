@@ -212,9 +212,10 @@ namespace BookStore.Data.Migrations
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
-                    b.Property<int>("PhoneNumber")
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
                         .HasMaxLength(11)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("Title")
                         .IsRequired()
