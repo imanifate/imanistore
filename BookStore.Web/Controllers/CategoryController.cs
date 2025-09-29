@@ -3,6 +3,7 @@ using BookStore.Aplication.Services.Interfaces;
 using BookStore.Domain.Enums;
 using BookStore.Domain.Models;
 using BookStore.Domain.ViewModels.Category;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Web.Controllers
@@ -16,6 +17,7 @@ namespace BookStore.Web.Controllers
             return View(result);
         }
 
+        [Authorize(Policy = "Adminonly")]
         [HttpGet("CreateCategory")]
         public IActionResult CreateCategory(int? categoryId)
         {

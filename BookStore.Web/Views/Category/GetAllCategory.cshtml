@@ -24,11 +24,14 @@
 			<div class="col-lg-8">
 				<div class="card border-primary">
 					<div class="card-body">
-						<div class="mb-3">
-							<a asp-action="CreateCategory" asp-route-categoryId="null" class="btn btn-success btn-lg">
-								افزودن دسته جدید
-							</a>
-						</div>
+						@if (User.HasClaim("IsAdmin", "True"))
+						{
+							<div class="mb-3">
+								<a asp-action="CreateCategory" asp-route-categoryId="null" class="btn btn-success btn-lg">
+									افزودن دسته جدید
+								</a>
+							</div>
+						}
 						<div class="accordion">
 							@foreach (var item in Model)
 							{

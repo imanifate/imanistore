@@ -125,7 +125,7 @@ namespace BookStore.Web.Controllers
             ClaimsPrincipal claimsPrincipal = new(claimsIdentity);
             AuthenticationProperties properties = new() { IsPersistent = model.RemmberMe };
             HttpContext.SignInAsync(claimsPrincipal, properties);
-            if (account.IsAdmin) return Redirect("/admin");
+      
             return RedirectToAction("Index", "Home");
 
             return View(model);
