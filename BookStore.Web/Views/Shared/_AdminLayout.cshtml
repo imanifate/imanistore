@@ -31,7 +31,7 @@
                     <li class="nav-item d-none d-md-block">
                         <div class="wrap-icon-header flex-w flex-r-m">
                             <partial name="_LoggedInUser" />
-                        </div>ورود/ثبت نام</a>
+                        </div>ورود </a>
                     </li>
                     <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">تماس</a></li>
                 </ul>
@@ -226,40 +226,20 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a  asp-controller="Brand" asp-action="BrandGetAll" class="nav-link">
+                                        <a asp-controller="Book" asp-action="GetAllBookAsync" class="nav-link">
                                             <i class="nav-icon bi bi-bookmarks-fill"></i>
                                             <p>لیست کتابها</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a  asp-controller="Brand" asp-action="CreateBrand" class="nav-link">
+                                        <a asp-controller="Book" asp-action="CreateBookAsync" class="nav-link">
                                             <i class="nav-icon bi bi-circle"></i>
                                             <p>افزودن کتاب</p>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon bi bi-box-seam-fill"></i>
-                                    <p> ماشین الات راه سازی<i class="nav-arrow bi bi-chevron-right"></i></p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a  asp-controller="Machine" asp-action="MachineGetAll" class="nav-link">
-                                            <i class="nav-icon bi bi-bookmarks-fill"></i>
-                                            <p>لیست ماشینها</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a asp-controller="Machine" asp-action="CreateMachine" class="nav-link">
-                                            <i class="nav-icon bi bi-circle"></i>
-                                            <p>افزودن ماشینها</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-header">ارتباطات</li>
+                           <li class="nav-header">ارتباطات</li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon bi bi-globe"></i>
