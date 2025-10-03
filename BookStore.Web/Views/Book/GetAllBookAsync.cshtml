@@ -59,21 +59,26 @@
                                             <td>@item.Publisher</td>
                                             <td>@item.BookTitle</td>
                                             <td>@item.Author</td>
-                                            <td><i class="fas @(item.Borrow ? "fa-check text-success" : "fa-times text-danger")"></i></td>
-                                            <td><i class="fas @(item.IsDeleted ? "fa-check text-success" : "fa-times text-danger")"></i></td>
+                                             <td><i class="fas @(item.Borrow ? "fa-check text-success"
+                                                : "fa-times text-danger")"></i></td> 
+                                            <td><i class="fas @(item.IsDeleted ? "fa-check text-success"
+                                                : "fa-times text-danger")"></i></td>
                                             <td>
                                                 <div class="btn-group btn-group-sm">
                                                     <a asp-action="EditBook" asp-route-bookId="@item.BookId" class="btn btn-warning">
                                                         <i class="fas fa-edit ml-2"></i>ویرایش
                                                     </a>
-                                                    <form asp-action="DeleteBook" method="post" asp-route-id="@item.BookId" onsubmit="return confirm('آیا از حذف اطمینان دارید؟')" style="display:inline;">
+                                                    <form asp-action="DeleteBook" method="post" asp-route-id="@item.BookId"
+                                                    onsubmit="return confirm('آیا از حذف اطمینان دارید؟')" style="display:inline;">
+
                                                         <button type="submit" class="btn btn-danger">
                                                             <i class="fas fa-trash ml-2"></i>حذف
                                                         </button>
                                                     </form>
                                                     <form asp-action="BorrowingAsync" method="post"
-                                                          asp-route-bookId="@item.BookId"
                                                     onsubmit="return confirm('آیا از امانت دادن این کتاب اطمینان دارید؟')" style="display:inline;">
+                                                        <input type="hidden" name="bookId" value="@item.BookId" />
+                                                        <input type="hidden" name="CategoryId" value="@Model.CategoryId" />
                                                         <button type="submit" class="btn btn-danger">
                                                             <i class="fas fa-trash ml-2"></i>امانت
                                                         </button>

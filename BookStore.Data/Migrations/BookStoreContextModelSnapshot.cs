@@ -125,17 +125,17 @@ namespace BookStore.Data.Migrations
 
             modelBuilder.Entity("BookStore.Domain.Models.Borrowing", b =>
                 {
-                    b.Property<int>("BookId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BookId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("DateAt")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
 
                     b.Property<bool>("IsDelete")
                         .HasColumnType("bit");
@@ -155,9 +155,14 @@ namespace BookStore.Data.Migrations
                     b.Property<DateTime?>("UpDateAt")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("BookId", "UserId");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("UserId");
+
+                    b.HasIndex("BookId", "UserId");
 
                     b.ToTable("Borrowing");
                 });

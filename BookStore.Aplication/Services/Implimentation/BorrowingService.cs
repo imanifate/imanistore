@@ -14,11 +14,12 @@ namespace BookStore.Aplication.Services.Implimentation
     {
         public async Task<Result> BorrowBookAsync(int userId, int bookId)
         {
+            
             genericRepository.Add(new Borrowing
             {
                 UserId = userId,
                 BookId = bookId,
-                IsReturn = true,
+                IsReturn = false,
                 ReturnDate = DateTime.Now
             });
             await genericRepository.SaveAsync();

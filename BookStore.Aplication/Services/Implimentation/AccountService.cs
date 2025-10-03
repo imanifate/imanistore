@@ -6,7 +6,6 @@ using BookStore.Domain.Models;
 using BookStore.Domain.ViewModels.Account;
 using BookStore.Aplication.Security;
 using BookStore.Aplication.Utilities;
-using BookStore.Data.Migrations;
 using BookStore.Domain.ViewModels;
 using System.Threading.Tasks;
 using System.ComponentModel.Design;

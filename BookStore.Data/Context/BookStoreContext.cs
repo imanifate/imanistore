@@ -111,7 +111,7 @@ namespace BookStore.Data.Context
             {
                 entity.HasKey(u => u.Id);
 
-                entity.HasKey(b => new { b.BookId, b.UserId });
+                entity.HasIndex(b => new { b.BookId, b.UserId });
 
                 entity.HasOne(b => b.Book)  // هر جدول borrowing با یک جدول book در ارتباط است
                 .WithMany(bk => bk.borrowings) // هر جدول book  تعدادی جدول borrowings در ارتباظ است
@@ -125,6 +125,9 @@ namespace BookStore.Data.Context
 
                 entity.Property(b => b.IsReturn)
                 .HasDefaultValue(false);
+
+                entity.Property(b => b.ReturnDate)
+                .HasDefaultValue(null);
             });
         }
 

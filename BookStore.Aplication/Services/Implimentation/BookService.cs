@@ -11,7 +11,9 @@ using BookStore.Domain.ViewModels.Book;
 
 namespace BookStore.Aplication.Services.Implimentation
 {
-    public class BookService(IGenericRepository<Book> genericRepository) : IBookService
+    public class BookService
+        (IGenericRepository<Book> genericRepository,
+        IBookRepository bookRepository) : IBookService
     {
         public async Task<Result> CreatAsync(CreateBookViewModel model)
         {
@@ -32,7 +34,7 @@ namespace BookStore.Aplication.Services.Implimentation
        
         public async Task<ListBookViewModel>? GetAllAsync(int categoryId)
         {
-            List<Book> Allbooks = await genericRepository.GetAllAsync();
+            List<Book> Allbooks = await bookRepository.GetAllByBorrow(categoryId);
             List<Book> books = Allbooks.Where(c => c.CategoryId == categoryId).ToList();
 
             if (books == null) return null;
@@ -41,11 +43,14 @@ namespace BookStore.Aplication.Services.Implimentation
                 CategoryId = categoryId,
                 Books = books.Select(b => new GetBookViewModel()
                 {
+                   
                     CategoryId = b.CategoryId,
+                    BookId = b.Id,
                     BookTitle = b.Title,
                     Author = b.Author,
                     PublicationDate = b.PublicationDate,
-                    IsDeleted = b.IsDelete
+                    IsDeleted = b.IsDelete,
+                    Borrow = b.borrowings.Any(br => !br.IsReturn)
 
                 }).ToList()
             };

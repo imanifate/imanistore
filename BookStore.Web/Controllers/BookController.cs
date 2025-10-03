@@ -128,11 +128,16 @@ namespace BookStore.Web.Controllers
         //    }
         //    return View();
         //}
-        [ActionName("BorrowingAsync")]
+
+        
+
+            [ActionName("BorrowingAsync")]
         [HttpPost]
-        public async Task<IActionResult> BorrowingAsync(int bookId)
+        public async Task<IActionResult> BorrowingAsync(int bookId , int categoryId)
         {
-          var  userId = int.Parse( User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+            var claim = User.FindFirst(ClaimTypes.NameIdentifier);
+            if (claim == null || bookId == null) return RedirectToAction("GetAllBookAsync", new { categoryId });
+            var  userId = int.Parse( User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
 
             Result result =await borrowingService.BorrowBookAsync(userId, bookId);
             switch (result)
@@ -140,7 +145,7 @@ namespace BookStore.Web.Controllers
                 case Result.Success:
                     {
                         AlertMessage("کتاب امانت داده شد", TitleAlert.موفق, IConeAlert.success);
-                        return RedirectToAction("GetAllCategory");
+                        return RedirectToAction("GetAllBookAsync");
                     }
                 case Result.Error:
                     {
