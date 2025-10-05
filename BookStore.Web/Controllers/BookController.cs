@@ -145,7 +145,7 @@ namespace BookStore.Web.Controllers
                 case Result.Success:
                     {
                         AlertMessage("کتاب امانت داده شد", TitleAlert.موفق, IConeAlert.success);
-                        return RedirectToAction("GetAllBookAsync");
+                        return RedirectToAction("GetAllBookAsync", new {categoryId});
                     }
                 case Result.Error:
                     {

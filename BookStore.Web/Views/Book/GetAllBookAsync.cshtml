@@ -59,7 +59,7 @@
                                             <td>@item.Publisher</td>
                                             <td>@item.BookTitle</td>
                                             <td>@item.Author</td>
-                                             <td><i class="fas @(item.Borrow ? "fa-check text-success"
+                                             <td><i class="fas @(!item.Borrow ? "fa-check text-success"
                                                 : "fa-times text-danger")"></i></td> 
                                             <td><i class="fas @(item.IsDeleted ? "fa-check text-success"
                                                 : "fa-times text-danger")"></i></td>
