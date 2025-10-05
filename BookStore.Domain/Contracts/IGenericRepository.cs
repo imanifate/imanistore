@@ -11,6 +11,7 @@ namespace BookStore.Domain.Contracts
     {
         Task<List<T>> GetAllAsync();
         Task<T> GetByIdAsync(int Id);
+       
         void Add(T entity);
         void Update (T entity);
         Task SaveAsync();

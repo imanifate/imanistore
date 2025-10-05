@@ -12,8 +12,9 @@ namespace BookStore.Aplication.Services.Interfaces
     {
         Task<Result> CreatAsync(CreateBookViewModel model);
         Task<ListBookViewModel>? GetAllAsync(int categoryId);
-        Task<List<GetBookViewModel>>? GetAllFreeAsync();
-        Task<List<GetBookViewModel>>? SearchTitleAsync(string title);
+       
+        Task<ListBookViewModel>? SearchTitleAsync(string title);
+        Task<ListBookViewModel>? SearchAuthorAsync(string title);
         Task<EditBookViewModel>? GetForEditAsync(int id);
         Task<Result> EditAsync(EditBookViewModel model);
         Task<Result> DeleteAsync(int id);

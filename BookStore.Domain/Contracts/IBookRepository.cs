@@ -9,8 +9,9 @@ namespace BookStore.Domain.Contracts
 {
     public interface IBookRepository
     {
-        Task<List<Book>> GetAllByBorrow(int categoryId);
-       List<Book> SerchByTitle(string title);
+        Task<List<Book>> GetAllByBorrowAsync(int categoryId);
+        Task<List<Book>> SearchByBookAndAuthorAsync(string title);
+        Task<List<Book>> SearchByAuthorAsync(string author);
 
     }
 }

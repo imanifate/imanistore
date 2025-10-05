@@ -12,7 +12,7 @@ namespace BookStore.Data.Repositores
 {
     public class BookRepository(BookStoreContext context) : IBookRepository
     {
-        public async Task<List<Book>> GetAllByBorrow(int categoryId)
+        public async Task<List<Book>> GetAllByBorrowAsync(int categoryId)
         {
          return await context.Books
              .Include(b => b.borrowings)   // لود امانت‌ها همراه کتاب
@@ -20,10 +20,17 @@ namespace BookStore.Data.Repositores
              .ToListAsync();
 
         }
-
-        public List<Book> SerchByTitle(string title)
+        public async Task<List<Book>> SearchByBookAndAuthorAsync(string title)
         {
-            return context.Books.Where(b => b.Title == title).ToList();
+            return await context.Books.Where(b => b.Title.Contains(title) || b.Author.Contains(title)).ToListAsync();
         }
+        public async Task<List<Book>> SearchByAuthorAsync(string author)
+        {
+            return await context.Books
+                .Where(b => b.Author.Contains(author))
+                .Include(b => b.borrowings)
+                .ToListAsync();
+        }
+
     }
 }

@@ -34,14 +34,13 @@ namespace BookStore.Aplication.Services.Implimentation
        
         public async Task<ListBookViewModel>? GetAllAsync(int categoryId)
         {
-            List<Book> Allbooks = await bookRepository.GetAllByBorrow(categoryId);
-            List<Book> books = Allbooks.Where(c => c.CategoryId == categoryId).ToList();
-
-            if (books == null) return null;
+            List<Book> Allbooks = await bookRepository.GetAllByBorrowAsync(categoryId);
+           
+            if (Allbooks == null) return null;
             var model = new ListBookViewModel
             {
                 CategoryId = categoryId,
-                Books = books.Select(b => new GetBookViewModel()
+                Books = Allbooks.Select(b => new GetBookViewModel()
                 {
                    
                     CategoryId = b.CategoryId,
@@ -49,6 +48,7 @@ namespace BookStore.Aplication.Services.Implimentation
                     BookTitle = b.Title,
                     Author = b.Author,
                     PublicationDate = b.PublicationDate,
+                    Publisher = b.Publisher,
                     IsDeleted = b.IsDelete,
                     Borrow = b.borrowings.Any(br => !br.IsReturn)
 
@@ -57,36 +57,57 @@ namespace BookStore.Aplication.Services.Implimentation
             return model;
             }
 
-        //public async Task<List<GetBookViewModel>>? GetAllFreeAsync()
-        //{
-        //    List<Book> freeBooks =await genericRepository.GetAllByBorrowAsync();
-        //    if (freeBooks == null) return null;
 
-        //    return freeBooks.Select(b => new GetBookViewModel()
-        //    {
-        //        Title = b.Title,
-        //        Author = b.Author,
-        //        PublicationDate = b.PublicationDate,
-        //        IsDeleted = b.IsDelete
+        public async Task<ListBookViewModel>? SearchTitleAsync(string title)
+        {
+            List<Book> books = await bookRepository.SearchByBookAndAuthorAsync(title);
 
-        //    }).ToList();
-        //}
+            if (books == null) return null;
 
-        //public async Task<List<GetBookViewModel>>? SearchTitleAsync(string title)
-        //{
-        //    List<Book> books =await genericRepository.SerchByTitleAsync(title);
+            var model = new ListBookViewModel
+            {
+                
+                Books = books.Select(b => new GetBookViewModel()
+                {
 
-        //    if (books == null) return null;
+                    CategoryId = b.CategoryId,
+                    BookId = b.Id,
+                    BookTitle = b.Title,
+                    Author = b.Author,
+                    PublicationDate = b.PublicationDate,
+                    Publisher = b.Publisher,
+                    IsDeleted = b.IsDelete,
+                    Borrow = b.borrowings.Any(br => !br.IsReturn)
 
-        //    return books.Select(b => new GetBookViewModel()
-        //    {
-        //        Title = b.Title,
-        //        Author = b.Author,
-        //        PublicationDate = b.PublicationDate,
-        //        IsDeleted = b.IsDelete
+                }).ToList()
+            };
+            return model;
+        }
+        public async Task<ListBookViewModel>? SearchAuthorAsync(string title)
+        {
+            List<Book> books = await bookRepository.SearchByAuthorAsync(title);
 
-        //    }).ToList();
-        //}
+            if (books == null) return null;
+
+            var model = new ListBookViewModel
+            {
+
+                Books = books.Select(b => new GetBookViewModel()
+                {
+
+                    CategoryId = b.CategoryId,
+                    BookId = b.Id,
+                    BookTitle = b.Title,
+                    Author = b.Author,
+                    PublicationDate = b.PublicationDate,
+                    Publisher = b.Publisher,
+                    IsDeleted = b.IsDelete,
+                    Borrow = b.borrowings.Any(br => !br.IsReturn)
+
+                }).ToList()
+            };
+            return model;
+        }
 
         public async Task<EditBookViewModel>? GetForEditAsync(int id)
         {
@@ -138,13 +159,6 @@ namespace BookStore.Aplication.Services.Implimentation
         public Task<List<GetBookViewModel>>? GetAllFreeAsync()
         {
             throw new NotImplementedException();
-        }
-
-        public Task<List<GetBookViewModel>>? SearchTitleAsync(string title)
-        {
-            throw new NotImplementedException();
-        }
-
-        
+        } 
     }
 }

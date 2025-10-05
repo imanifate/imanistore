@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using BookStore.Aplication.Services.Interfaces;
 using BookStore.Controllers;
+using BookStore.Data.Repositores;
 using BookStore.Domain.Enums;
 using BookStore.Domain.Models;
 using BookStore.Domain.ViewModels.Book;
@@ -11,23 +12,23 @@ using Microsoft.AspNetCore.Mvc;
 namespace BookStore.Web.Controllers
 {
     public class BookController(
-        IBookService bookService ,
+        IBookService bookService,
         ILogger<BookController> logger,
         IBorrowingService borrowingService
-        ): BaseController
+        ) : BaseController
     {
         [ActionName("GetAllBookAsync")]
         public async Task<IActionResult> GetAllBookAsync(int categoryId)
         {
             ListBookViewModel result = await bookService.GetAllAsync(categoryId);
-
+            ViewData["Title"] = "لیست کتابها";
             return View(result);
         }
 
 
         [ActionName("CreateBookAsync")]
         [HttpGet]
-       [Authorize(Policy="Adminonly")]
+        [Authorize(Policy = "Adminonly")]
         public async Task<IActionResult> CreateBookAsync(int categoryId)
         {
             logger.LogInformation("BookCategory GET called. CategoryId={CategoryId}", categoryId);
@@ -50,22 +51,22 @@ namespace BookStore.Web.Controllers
                 return View(model);
             }
             try
-            { 
-            Result result = await bookService.CreatAsync(model);
-
-            switch (result)
             {
-                case Result.Success:
-                    {
-                         AlertMessage("  با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
-                        return RedirectToAction("GetAllBookAsync");
-                    }
-                case Result.Error:
-                    {
-                        // AlertMessage("ثبت سوال با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
-                        break;
-                    }
-            }
+                Result result = await bookService.CreatAsync(model);
+
+                switch (result)
+                {
+                    case Result.Success:
+                        {
+                            AlertMessage("  با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
+                            return RedirectToAction("GetAllBookAsync");
+                        }
+                    case Result.Error:
+                        {
+                            // AlertMessage("ثبت سوال با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
+                            break;
+                        }
+                }
             }
             catch (Exception ex)
             {
@@ -129,25 +130,30 @@ namespace BookStore.Web.Controllers
         //    return View();
         //}
 
-        
 
-            [ActionName("BorrowingAsync")]
+
+        [ActionName("BorrowingAsync")]
         [HttpPost]
-        public async Task<IActionResult> BorrowingAsync(int bookId , int categoryId)
+        public async Task<IActionResult> BorrowingAsync(int bookId, int categoryId)
         {
             var claim = User.FindFirst(ClaimTypes.NameIdentifier);
             if (claim == null || bookId == null) return RedirectToAction("GetAllBookAsync", new { categoryId });
-            var  userId = int.Parse( User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
 
-            Result result =await borrowingService.BorrowBookAsync(userId, bookId);
+            Result result = await borrowingService.BorrowBookAsync(userId, bookId);
             switch (result)
             {
                 case Result.Success:
                     {
                         AlertMessage("کتاب امانت داده شد", TitleAlert.موفق, IConeAlert.success);
-                        return RedirectToAction("GetAllBookAsync", new {categoryId});
+                        return RedirectToAction("GetAllBookAsync", new { categoryId });
                     }
                 case Result.Error:
+                    {
+                        AlertMessage("فرایند امانت کتاب با مشکل مواجه شد", TitleAlert.خطا, IConeAlert.error);
+                        break;
+                    }
+                default:
                     {
                         AlertMessage("فرایند امانت کتاب با مشکل مواجه شد", TitleAlert.خطا, IConeAlert.error);
                         break;
@@ -155,6 +161,67 @@ namespace BookStore.Web.Controllers
             }
 
             return View();
+        }
+
+        [ActionName("SearchBookAndAuthorasync")]
+        [HttpGet]
+        public async Task<IActionResult> SearchBookAndAuthorasync()
+        {
+            return View();
+        }
+
+        [ActionName("SearchBookAndAuthorasync")]
+        [HttpPost]
+        public async Task<IActionResult> SearchBookAndAuthorasync(string bookAndAuthor)
+        {
+            if (bookAndAuthor == null)
+            {
+                AlertMessage("فیلد جستجو خالی میباشد", TitleAlert.خطا, IConeAlert.error);
+            }
+
+            var result =await bookService.SearchTitleAsync(bookAndAuthor);
+            if (result == null)
+
+            {
+                AlertMessage("نتیجه ای یافت نشد", TitleAlert.خطا, IConeAlert.error);
+                return View();
+            }
+
+           
+            return View( result);
+            
+        }
+
+
+        [ActionName("SearchAuthorasync")]
+        [HttpGet]
+        public async Task<IActionResult> SearchAuthorasync()
+        {
+            
+            return View();
+        }
+
+        [ActionName("SearchAuthorasync")]
+        [HttpPost]
+        public async Task<IActionResult> SearchAuthorasync(string Author)
+        {
+            ViewData["Title"] = "جستجو";
+            if (Author == null)
+            {
+                AlertMessage("فیلد جستجو خالی میباشد", TitleAlert.خطا, IConeAlert.error);
+            }
+
+            var result = await bookService.SearchAuthorAsync(Author);
+            if (result == null)
+
+            {
+                AlertMessage("نتیجه ای یافت نشد", TitleAlert.خطا, IConeAlert.error);
+                return View();
+            }
+
+
+            return View(result);
+
         }
     }
 }
