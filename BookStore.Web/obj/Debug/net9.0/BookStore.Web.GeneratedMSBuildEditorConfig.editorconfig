@@ -17,93 +17,93 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BookStore.Web
 build_property.RootNamespace = BookStore.Web
-build_property.ProjectDir = D:\asp\bookStoor\BookStore.Web\
+build_property.ProjectDir = C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\asp\bookStoor\BookStore.Web
+build_property.MSBuildProjectDirectory = C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Account/Active.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Account/Active.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY3RpdmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Account/CreatAccountAsync.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Account/CreatAccountAsync.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdEFjY291bnRBc3luYy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Account/LoginAsync.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Account/LoginAsync.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbkFzeW5jLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Book/CreateBookAsync.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Book/CreateBookAsync.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGVCb29rQXN5bmMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Book/GetAllBookAsync.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Book/GetAllBookAsync.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xHZXRBbGxCb29rQXN5bmMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Book/SearchAuthorasync.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Book/SearchAuthorasync.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xTZWFyY2hBdXRob3Jhc3luYy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Book/SearchBookAndAuthorasync.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Book/SearchBookAndAuthorasync.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xTZWFyY2hCb29rQW5kQXV0aG9yYXN5bmMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Category/CreateCategory.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Category/CreateCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Category/GetAllCategory.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Category/GetAllCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcR2V0QWxsQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Home/Index.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Home/Privacy.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Shared/Components/CategoryItem/CategoryItem.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Shared/Components/CategoryItem/CategoryItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlJdGVtXENhdGVnb3J5SXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Shared/Error.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Shared/_LoggedInUser.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Shared/_LoggedInUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dnZWRJblVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Shared/_SweatAlertPartial.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Shared/_SweatAlertPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Td2VhdEFsZXJ0UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/User/RgisterUserAsync.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/User/RgisterUserAsync.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZ2lzdGVyVXNlckFzeW5jLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/_ViewImports.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/_ViewStart.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp/bookStoor/BookStore.Web/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/HosseinDev/Desktop/New folder/imanistore/BookStore.Web/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-3bjreshhb7

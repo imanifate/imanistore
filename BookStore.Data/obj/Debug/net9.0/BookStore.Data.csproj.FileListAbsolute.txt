@@ -16,3 +16,21 @@ D:\asp\bookStoor\BookStore.Data\obj\Debug\net9.0\refint\BookStore.Data.dll
 D:\asp\bookStoor\BookStore.Data\obj\Debug\net9.0\BookStore.Data.pdb
 D:\asp\bookStoor\BookStore.Data\obj\Debug\net9.0\BookStore.Data.genruntimeconfig.cache
 D:\asp\bookStoor\BookStore.Data\obj\Debug\net9.0\ref\BookStore.Data.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\bin\Debug\net9.0\BookStore.Data.deps.json
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\bin\Debug\net9.0\BookStore.Data.runtimeconfig.json
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\bin\Debug\net9.0\BookStore.Data.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\bin\Debug\net9.0\BookStore.Data.pdb
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\bin\Debug\net9.0\BookStore.Domain.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\bin\Debug\net9.0\BookStore.Domain.pdb
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\BookStore.Data.csproj.AssemblyReference.cache
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\BookStore.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\BookStore.Data.AssemblyInfoInputs.cache
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\BookStore.Data.AssemblyInfo.cs
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\BookStore.Data.csproj.CoreCompileInputs.cache
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\BookStore.Data.sourcelink.json
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\BookStor.66D4784D.Up2Date
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\BookStore.Data.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\refint\BookStore.Data.dll
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\BookStore.Data.pdb
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\BookStore.Data.genruntimeconfig.cache
+C:\Users\HosseinDev\Desktop\New folder\imanistore\BookStore.Data\obj\Debug\net9.0\ref\BookStore.Data.dll

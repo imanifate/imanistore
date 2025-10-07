@@ -8287,23 +8287,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\imani\\.nuget\\packages\\": {},
+    "C:\\Users\\HosseinDev\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\asp\\bookStoor\\BookStore.Web\\BookStore.Web.csproj",
+      "projectUniqueName": "C:\\Users\\HosseinDev\\Desktop\\New folder\\imanistore\\BookStore.Web\\BookStore.Web.csproj",
       "projectName": "BookStore.Web",
-      "projectPath": "D:\\asp\\bookStoor\\BookStore.Web\\BookStore.Web.csproj",
-      "packagesPath": "C:\\Users\\imani\\.nuget\\packages\\",
-      "outputPath": "D:\\asp\\bookStoor\\BookStore.Web\\obj\\",
+      "projectPath": "C:\\Users\\HosseinDev\\Desktop\\New folder\\imanistore\\BookStore.Web\\BookStore.Web.csproj",
+      "packagesPath": "C:\\Users\\HosseinDev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HosseinDev\\Desktop\\New folder\\imanistore\\BookStore.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\imani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HosseinDev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8312,21 +8312,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\asp\\bookStoor\\BookStore.Aplication\\BookStore.Aplication.csproj": {
-              "projectPath": "D:\\asp\\bookStoor\\BookStore.Aplication\\BookStore.Aplication.csproj"
+            "C:\\Users\\HosseinDev\\Desktop\\New folder\\imanistore\\BookStore.Aplication\\BookStore.Aplication.csproj": {
+              "projectPath": "C:\\Users\\HosseinDev\\Desktop\\New folder\\imanistore\\BookStore.Aplication\\BookStore.Aplication.csproj"
             },
-            "D:\\asp\\bookStoor\\BookStore.Data\\BookStore.Data.csproj": {
-              "projectPath": "D:\\asp\\bookStoor\\BookStore.Data\\BookStore.Data.csproj"
+            "C:\\Users\\HosseinDev\\Desktop\\New folder\\imanistore\\BookStore.Data\\BookStore.Data.csproj": {
+              "projectPath": "C:\\Users\\HosseinDev\\Desktop\\New folder\\imanistore\\BookStore.Data\\BookStore.Data.csproj"
             },
-            "D:\\asp\\bookStoor\\BookStore.IOC\\BookStore.IOC.csproj": {
-              "projectPath": "D:\\asp\\bookStoor\\BookStore.IOC\\BookStore.IOC.csproj"
+            "C:\\Users\\HosseinDev\\Desktop\\New folder\\imanistore\\BookStore.IOC\\BookStore.IOC.csproj": {
+              "projectPath": "C:\\Users\\HosseinDev\\Desktop\\New folder\\imanistore\\BookStore.IOC\\BookStore.IOC.csproj"
             }
           }
         }
@@ -8389,7 +8388,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
