@@ -12,15 +12,7 @@ namespace BookStore.Data.Repositores
 {
     public class CategoryRepository(BookStoreContext _contexte) : ICategoryRepository
     {
-        public void Save()
-        {
-            _contexte.SaveChanges();
-        }
-        public void Create(Category category)
-        {
-            _contexte.Categories.Add(category);
-        }
-
+       
         public List<Category> GetAll()
         {
             List<Category> categoreis = _contexte.Categories
@@ -47,19 +39,6 @@ namespace BookStore.Data.Repositores
             {
                 LoadChildrenRecursive (child);
             }
-        }
-
-        public Category? GetById(int id)
-        {
-            Category category = _contexte.Categories.FirstOrDefault(c => c.Id == id);
-
-            if(category == null) return null;
-
-            return category;
-        }
-        public void Update(Category category)
-        {
-            _contexte.Categories.Update(category);
         }
 
        

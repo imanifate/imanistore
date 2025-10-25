@@ -1,97 +1,190 @@
-﻿using BookStore.Aplication.Services.Interfaces;
-using BookStore.Domain.Enums.Category;
+﻿using System.Threading.Tasks;
+using BookStore.Aplication.Services.Implimentation;
+using BookStore.Aplication.Services.Interfaces;
+using BookStore.Controllers;
+using BookStore.Domain.Enums;
+using BookStore.Domain.Models;
 using BookStore.Domain.ViewModels.Category;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Web.Controllers
 {
-    public class CategoryController (ICategoryService categoryService) : Controller
+    public class CategoryController (ICategoryService categoryService , ILogger<CategoryController> logger) : BaseController
     {
         [HttpGet("GetAllCategory")]
-        public IActionResult GetAllCategory()
+        public async Task<IActionResult> GetAllCategory()
         {
-            return View();
+           List<GetCategoryViewModel> result =await categoryService.GetAllAsync();
+            return View(result);
         }
 
+        [Authorize(Policy = "Adminonly")]
         [HttpGet("CreateCategory")]
-        public IActionResult CreateCategory()
+        public IActionResult CreateCategory(int? categoryId)
         {
-            return View();
+            logger.LogInformation("CreateCategory GET called. CategoryId={CategoryId}", categoryId);
+
+            var model = new CreateCategoryViewModel
+            {
+                CategoryId = categoryId
+            };
+
+            return View(model);
         }
 
         [HttpPost("CreateCategory")]
-        public IActionResult CreateCategory(CreateCategoryViewModel Createmodel)
+        public async Task<IActionResult> CreateCategory(CreateCategoryViewModel model)
         {
-          CreatResult result = categoryService.Creat(Createmodel);
+            if (!ModelState.IsValid)
+            {
+                logger.LogWarning("CreateCategory POST called with invalid model");
+                return View(model);
+            }
+
+            try
+            {
+                Result result =await categoryService.CreateAsync(model);
 
             switch (result)
             {
-                case CreatResult.Success:
+                case Result.Success:
                     {
-                       // AlertMessage("ثبت سوال با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
+                         AlertMessage("ثبت گروه با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
                         return RedirectToAction("GetAllCategory");
                     }
-                case CreatResult.Error:
+                case Result.Error:
                     {
-                       // AlertMessage("ثبت سوال با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
-                       break;
+                        AlertMessage("ثبت گروه با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
+                        break;
                     }
             }
-            return View("CreateCategory");
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Unexpected error while creating category. Name={Name}", model.CategoryTitle);
+            }
+
+            return View("CreateCategory", model);
         }
 
-        [HttpGet("GetForEdit")]
-        public IActionResult GetForEdit(int id)
+        [Authorize(Policy = "Adminonly")]
+        [ActionName("GetForEdit")]
+        [HttpGet]
+        public async Task<IActionResult> GetForEdit(int id)
         {
-            if(!ModelState.IsValid) return View();
+            if (!ModelState.IsValid) return View();
 
-           EditCategoryViewModel model = categoryService.GetForEdit(id);
-            if (model == null) return View("Error");
+            EditCategoryViewModel model =await categoryService.GetForEdit(id);
+            if (model == null)
+            {
+                AlertMessage("شناسه نامعتبر است", TitleAlert.خطا, IConeAlert.error);
+
+                return View(model);
+            }
 
             return View(model);
         }
 
-        [HttpPost("EditCategory")]
-        public IActionResult EditCategory(EditCategoryViewModel model)
+        [ActionName("EditCategory")]
+        [HttpPost]
+        public async Task<IActionResult> EditCategory(EditCategoryViewModel model)
         {
-            if(!ModelState.IsValid) return View();
+            if (!ModelState.IsValid) return View();
 
-            EditResult result = categoryService.Edit(model);
+            Result result =await categoryService.Edit(model);
             switch (result)
             {
-                case EditResult.Success:
+                case Result.Success:
                     {
-                        // AlertMessage("ثبت سوال با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
+                        AlertMessage(" ویرایش با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
                         return RedirectToAction("GetAllCategory");
                     }
-                case EditResult.Error:
+                case Result.Error:
                     {
-                        // AlertMessage("ثبت سوال با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
+                         AlertMessage(" ویرایش با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
                         break;
                     }
             }
             return View(model);
         }
 
-        [HttpPost("DeleteCategory")]
-        public IActionResult DeleteCategory(int id)
+        [ActionName("DeleteCategory")]
+        [HttpPost]
+
+        public async Task<IActionResult> DeleteCategory(int categoryId)
         {
-            DeleteResult result = categoryService.Delete(id);
+            Result result =await categoryService.Delete(categoryId);
 
             switch (result)
             {
-                case DeleteResult.Success:
+                case Result.Success:
                     {
-                        // AlertMessage("ثبت سوال با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
+                         AlertMessage(" حذف گروه با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
                         return RedirectToAction("GetAllCategory");
                     }
-                case DeleteResult.Error:
+                case Result.Error:
                     {
-                        // AlertMessage("ثبت سوال با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
+                         AlertMessage(" حذف گروه با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
                         break;
                     }
             }
-            return View();
+            return RedirectToAction("GetAllCategory");
         }
+         
+
+        //    [HttpGet("GetForEdit")]
+        //    public IActionResult GetForEdit(int id)
+        //    {
+        //        if(!ModelState.IsValid) return View();
+
+        //       EditCategoryViewModel model = categoryService.GetForEdit(id);
+        //        if (model == null) return View("Error");
+
+        //        return View(model);
+        //    }
+
+        //    [HttpPost("EditCategory")]
+        //    public IActionResult EditCategory(EditCategoryViewModel model)
+        //    {
+        //        if(!ModelState.IsValid) return View();
+
+        //        EditResult result = categoryService.Edit(model);
+        //        switch (result)
+        //        {
+        //            case EditResult.Success:
+        //                {
+        //                    // AlertMessage("ثبت سوال با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
+        //                    return RedirectToAction("GetAllCategory");
+        //                }
+        //            case EditResult.Error:
+        //                {
+        //                    // AlertMessage("ثبت سوال با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
+        //                    break;
+        //                }
+        //        }
+        //        return View(model);
+        //    }
+
+        //    [HttpPost("DeleteCategory")]
+        //    public IActionResult DeleteCategory(int id)
+        //    {
+        //        DeleteResult result = categoryService.Delete(id);
+
+        //        switch (result)
+        //        {
+        //            case DeleteResult.Success:
+        //                {
+        //                    // AlertMessage("ثبت سوال با موفقیت انجام شد", TitleAlert.موفق, IConeAlert.success);
+        //                    return RedirectToAction("GetAllCategory");
+        //                }
+        //            case DeleteResult.Error:
+        //                {
+        //                    // AlertMessage("ثبت سوال با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
+        //                    break;
+        //                }
+        //        }
+        //        return View();
+        //    }
     }
 }

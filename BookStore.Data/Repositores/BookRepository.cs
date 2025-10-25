@@ -6,44 +6,31 @@ using System.Threading.Tasks;
 using BookStore.Data.Context;
 using BookStore.Domain.Contracts;
 using BookStore.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.Data.Repositores
 {
-    public class BookRepository(BookStoreContext _context) : IBookRepository
+    public class BookRepository(BookStoreContext context) : IBookRepository
     {
-        public void Create(Book book)
+        public async Task<List<Book>> GetAllByBorrowAsync(int categoryId)
         {
-            _context.Books.Add(book);
+         return await context.Books
+             .Include(b => b.borrowings)   // لود امانت‌ها همراه کتاب
+             .Where(c => c.CategoryId == categoryId)
+             .ToListAsync();
+
+        }
+        public async Task<List<Book>> SearchByBookAndAuthorAsync(string title)
+        {
+            return await context.Books.Where(b => b.Title.Contains(title) || b.Author.Contains(title)).ToListAsync();
+        }
+        public async Task<List<Book>> SearchByAuthorAsync(string author)
+        {
+            return await context.Books
+                .Where(b => b.Author.Contains(author))
+                .Include(b => b.borrowings)
+                .ToListAsync();
         }
 
-        public List<Book> GetAll()
-        {
-            return _context.Books.ToList();
-        }
-
-        public List<Book> GetAllByBorrow()
-        {
-            return _context.Books.Where(c => c.Borrow == false).ToList();
-        }
-
-        public Book GetById(int id)
-        {
-            return _context.Books.FirstOrDefault(c => c.Id==id);
-        }
-
-        public void Save()
-        {
-            _context.SaveChanges();
-        }
-
-        public List<Book> SerchByTitle(string title)
-        {
-          return  _context.Books.Where(b => b.Title == title).ToList();
-        }
-
-        public void Update(Book book)
-        {
-            _context.Books.Update(book);
-        }
     }
 }

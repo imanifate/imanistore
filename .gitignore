@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/bookStoor/v17/DocumentLayout.json
+/.vs/bookStoor/v17/.wsuo
+/.vs/VSWorkspaceState.json
+*.vsidx

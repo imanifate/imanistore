@@ -5,44 +5,62 @@ using System.Text;
 using System.Threading.Tasks;
 using BookStore.Aplication.Services.Interfaces;
 using BookStore.Domain.Contracts;
-using BookStore.Domain.Enums.Category;
 using BookStore.Domain.Models;
 using BookStore.Domain.ViewModels.Category;
+using BookStore.Data.Repositores;
+using BookStore.Domain.Enums;
+
 
 namespace BookStore.Aplication.Services.Implimentation
 {
-    public class CategoryService (ICategoryRepository categoryRepository):ICategoryService
+    public class CategoryService(IGenericRepository<Category> genericRepository) : ICategoryService
     {
-        public CreatResult Creat(CreateCategoryViewModel model)
+       
+        public async Task<Result> CreateAsync(CreateCategoryViewModel model)
         {
-            categoryRepository.Create(new Category
+            genericRepository.Add(new Category
             {
-                ParentId = model.ParentId,
-                Title = model.Title,
+                ParentId = model.CategoryId,
+                Title = model.CategoryTitle
             });
 
-            categoryRepository.Save();
+           await genericRepository.SaveAsync();
 
-            return CreatResult.Success; 
+            return Result.Success; 
         }
 
-        public List<ListCategoryViewModel> GetAll()
+        
+        public async Task<List<GetCategoryViewModel>> GetAllAsync()
         {
-           List<Category> categoreis = categoryRepository.GetAll();
+            List<Category> categories = await genericRepository.GetAllAsync();
 
-            if (categoreis == null) return null;
+            if (!categories.Any()) return null;
 
-            return categoreis.Select(c=> new ListCategoryViewModel()
+            return categories
+                .Where(c => c.ParentId == null) // فقط ریشه‌ها
+                .Select(MapCategoryToViewModelRecursive)
+                .ToList();
+        }
+
+        private GetCategoryViewModel MapCategoryToViewModelRecursive(Category category)
+        {
+            return new GetCategoryViewModel()
             {
-                Title = c.Title,
-                IsDelete = c.IsDelete
-            }).ToList();
+                CategoryId = category.Id,
+                CategoryTitle = category.Title,
+                ParentId = category.ParentId,
+                IsDeleted = category.IsDelete,
+                ChildrenCount = category.Children.Count,
+                Childrens = category.Children
+                    .Select(MapCategoryToViewModelRecursive)
+                    .ToList()
+            };
         }
 
-        public EditCategoryViewModel GetForEdit(int id)
+        public async Task<EditCategoryViewModel> GetForEdit(int id)
         {
 
-          Category category = categoryRepository.GetById(id);
+          Category category =await genericRepository.GetByIdAsync(id);
 
             return new EditCategoryViewModel()
             {
@@ -52,33 +70,32 @@ namespace BookStore.Aplication.Services.Implimentation
 
         }
 
-        public EditResult Edit(EditCategoryViewModel model)
+        public async Task<Result> Edit(EditCategoryViewModel model)
         {
-            Category category = categoryRepository.GetById(model.Id);
+            Category category = await genericRepository.GetByIdAsync(model.Id);
 
-            if (category == null) return EditResult.Null;
+            if (category == null) return Result.Null;
 
             category.Title = model.Title;
             category.IsDelete = model.IsDeleted;
 
-            categoryRepository.Update(category);
-            categoryRepository.Save();
+            genericRepository.Update(category);
+           await genericRepository.SaveAsync();
 
-            return EditResult.Success;
+            return Result.Success;
         }
 
-        public DeleteResult Delete(int id)
+        public async Task<Result> Delete(int id)
         {
-            Category category = categoryRepository.GetById(id);
-
-            if (category == null) return DeleteResult.Null;
+           Category category = await genericRepository.GetByIdAsync(id);
+            if (category == null) return Result.Null;
 
             category.IsDelete = true;
 
-            categoryRepository.Update(category);
-            categoryRepository.Save();
+            genericRepository.Update(category);
+            await genericRepository.SaveAsync();
 
-            return DeleteResult.Success;
+            return Result.Success;
 
         }
     }

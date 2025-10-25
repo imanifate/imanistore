@@ -1,0 +1,115 @@
+﻿@using BookStore.Domain.ViewModels.Category
+@model GetCategoryViewModel
+@{
+	var accordionId = $"accordion-{Model.CategoryId}";
+	var collapseId = $"collapse-{Model.CategoryId}";
+	var modalId = $"modal-{Model.CategoryId}";
+}
+
+<div class="accordion-item">
+	<div class="accordion-header d-flex justify-content-around align-items-center">
+		<button class="accordion-button collapsed pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#@collapseId" aria-expanded="false" aria-controls="@collapseId">
+			<span>@Model.CategoryTitle</span>
+			<span class="text-muted ms-2">(@Model.ChildrenCount)</span>
+			@if (Model.IsDeleted)
+			{
+				<span class="badge bg-danger ms-2">حذف شده</span>
+			}
+		</button>
+	</div>
+
+	<div id="@collapseId" class="accordion-collapse collapse" data-bs-parent="#@accordionId">
+		<div class="accordion-body ms-2" role="group" aria-label="Basic mixed styles example">
+			<div class="row">
+				@if (User.HasClaim("IsAdmin", "True"))
+				{
+					<div class="col-md-3 col-12 mb-2">
+						<a asp-action="CreateCategory" asp-route-categoryId="@Model.CategoryId"
+						   class="btn btn-success btn-block">
+
+							<i class="fas fa-plus ml-2"></i>افزودن زیر گروه
+
+							<i class="fas fa-plus ml-2"></i> افزودن
+
+						</a>
+					</div>
+					<div class="col-md-3 col-12 mb-2">
+
+						<button type="button" class="btn btn-warning btn-block"
+								data-bs-toggle="modal" data-bs-target="#editModal-@Model.CategoryId">
+							<i class="fas fa-edit ml-2"></i> ویرایش
+						</button>
+
+						<div class="modal fade" id="editModal-@Model.CategoryId" tabindex="-1" aria-labelledby="editModalLabel-@Model.CategoryId" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<form asp-action="EditCategory" method="post" asp-route-categoryId="@Model.CategoryId">
+										<div class="modal-header">
+											<h5 class="modal-title" id="editModalLabel-@Model.CategoryId">ویرایش دسته</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="بستن"></button>
+										</div>
+										<div class="modal-body">
+											<input type="hidden" name="Id" value="@Model.CategoryId" />
+											<div class="mb-3">
+												<label class="form-label">عنوان دسته</label>
+												<input type="text" class="form-control" name="Title" value="@Model.CategoryTitle" />
+											</div>
+											<div class="mb-3">
+												<label class="form-label">وضعیت حذف</label>
+												<select name="IsDeleted" class="form-select">
+													<option value="false" selected="@(Model.IsDeleted == false ? "selected" : null)">فعال</option>
+													<option value="true" selected="@(Model.IsDeleted == true ? "selected" : null)">غیرفعال</option>
+												</select>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="submit" class="btn btn-primary">ذخیره تغییرات</button>
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="col-md-3 col-12">
+						<form asp-action="DeleteCategory" method="post" asp-route-categoryId="@Model.CategoryId" onsubmit="return confirm('آیا از حذف اطمینان دارید؟')" style="display:inline;">
+
+							<button class="btn btn-danger btn-block">
+								<i class="fas fa-trash ml-2"></i> حذف
+							</button>
+
+						</form>
+					</div>
+				}
+				@if (Model.ChildrenCount == 0)
+				{
+					<div class="col-md-3 col-12">
+						<a asp-action="GetAllBookAsync" asp-route-categoryId="@Model.CategoryId"
+						   asp-controller="Book" method="Get" style="display:inline;">
+
+							<button class="btn btn-primary btn-block">
+
+								<i class="fas fa-book ml-2"></i>مدیریت کتابها
+
+								<i class="fas fa-book ml-2"></i>کتابها
+
+							</button>
+
+						</a>
+					</div>
+				}
+			</div>
+			@if (Model.Childrens.Any())
+			{
+				<div class="accordion" id="@accordionId">
+					@foreach (var item in Model.Childrens)
+					{
+						@await Component.InvokeAsync("CategoryItem", item)
+					}
+				</div>
+			}
+		</div>
+	</div>
+</div>

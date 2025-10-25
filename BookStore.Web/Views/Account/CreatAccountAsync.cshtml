@@ -1,0 +1,79 @@
+﻿@using BookStore.Domain.ViewModels.Account
+@model AccountViewModl
+
+@{
+	ViewData["Title"] = "ساخت حساب کاربری";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+	<div class="container-fluid">
+		<div class="row mb-2">
+			<div class="col-sm-6">
+				<h1>@ViewData["Title"]</h1>
+			</div>
+			<div class="col-sm-6">
+				<ol class="breadcrumb float-sm-left">
+					<li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">خانه</a></li>
+					<li class="breadcrumb-item active">@ViewData["Title"]</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="card card-primary">
+					<div class="card-header">
+						<h3 class="card-title">حساب کاربری</h3>
+					</div>
+
+					<form asp-action="CreatAccountAsync" method="post">
+						<input asp-for="UserId" value="@Model.UserId" type="hidden" />
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="UserName"></label>
+								<input asp-for="UserName" type="text" class="form-control" placeholder=" نام کاربری خود را وارد کنید">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="Email"></label>
+								<input asp-for="Email" type="text" class="form-control" placeholder=" ایمیل خود را وارد کنید">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label asp-for="Password" ></label>
+								<input asp-for="Password" type="text" class="form-control" placeholder="رمز عبور خود را وارد کنید">
+							</div>
+						</div>
+				       <div class="card-body">
+							<div class="form-group">
+								<label asp-for="RePassword"></label>
+								<input asp-for="RePassword" type="text" class="form-control" placeholder=" رمز عبور خود را مجدد وارد کنید">
+							</div>
+						</div>
+						<div class="m-b-20">
+							<label class="stext-111 cl2 plh3 p-l-62 p-r-30">
+								<input asp-for="Rules" type="checkbox" name="Rulse" class="checkbox-inline">
+								 قوانین زا میپذیرم  
+							</label>
+						<div class="card-footer">
+							<button type="submit" class="btn btn-primary">ثبت</button>
+						</div>
+
+					</form>
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+</section>

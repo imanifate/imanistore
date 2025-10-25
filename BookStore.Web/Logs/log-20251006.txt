@@ -1,0 +1,1076 @@
+2025-10-06 00:21:17.335 +03:30 [INF] User profile is available. Using 'C:\Users\imani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 00:21:20.332 +03:30 [INF] Now listening on: https://localhost:7223
+2025-10-06 00:21:20.333 +03:30 [INF] Now listening on: http://localhost:5186
+2025-10-06 00:21:20.399 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 00:21:20.399 +03:30 [INF] Hosting environment: Development
+2025-10-06 00:21:20.400 +03:30 [INF] Content root path: D:\asp\bookStoor\BookStore.Web
+2025-10-06 00:21:20.883 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/ - null null
+2025-10-06 00:21:21.448 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:21:21.493 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookStore.Web.Controllers.HomeController (BookStore.Web).
+2025-10-06 00:21:21.506 +03:30 [INF] Executing ViewResult, running view Index.
+2025-10-06 00:21:21.617 +03:30 [INF] Executed ViewResult - view Index executed in 110.1657ms.
+2025-10-06 00:21:21.619 +03:30 [INF] Executed action BookStore.Web.Controllers.HomeController.Index (BookStore.Web) in 125.911ms
+2025-10-06 00:21:21.620 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:21:21.624 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/ - 200 null text/html; charset=utf-8 747.5276ms
+2025-10-06 00:21:21.657 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:21:21.657 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:21:21.657 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:21:21.658 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:21:21.690 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:21:21.690 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:21:21.691 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:21:21.698 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 34.8597ms
+2025-10-06 00:21:21.744 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:21:21.745 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:21:21.745 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:21:21.751 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:21:21.783 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:21:21.784 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:21:21.784 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:21:21.801 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:21:21.801 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:21:21.801 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 143.3751ms
+2025-10-06 00:21:21.802 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 144.2785ms
+2025-10-06 00:21:21.851 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 106.2646ms
+2025-10-06 00:21:21.940 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:21:21.941 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:21:21.942 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 196.7876ms
+2025-10-06 00:21:21.944 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:21:21.944 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:21:21.945 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 287.7438ms
+2025-10-06 00:21:21.963 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 216.1696ms
+2025-10-06 00:21:22.066 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:21:22.073 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 7.3543ms
+2025-10-06 00:21:22.073 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:21:26.506 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/Book/SearchBookAndAuthorasync - null null
+2025-10-06 00:21:26.523 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web)'
+2025-10-06 00:21:26.536 +03:30 [INF] Route matched with {action = "SearchBookAndAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchBookAndAuthorasync() on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:21:34.326 +03:30 [INF] Executing ViewResult, running view SearchBookAndAuthorasync.
+2025-10-06 00:24:59.956 +03:30 [INF] User profile is available. Using 'C:\Users\imani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 00:25:02.587 +03:30 [INF] Now listening on: https://localhost:7223
+2025-10-06 00:25:02.588 +03:30 [INF] Now listening on: http://localhost:5186
+2025-10-06 00:25:02.640 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 00:25:02.641 +03:30 [INF] Hosting environment: Development
+2025-10-06 00:25:02.641 +03:30 [INF] Content root path: D:\asp\bookStoor\BookStore.Web
+2025-10-06 00:25:03.220 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/ - null null
+2025-10-06 00:25:03.748 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:25:03.784 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookStore.Web.Controllers.HomeController (BookStore.Web).
+2025-10-06 00:25:03.794 +03:30 [INF] Executing ViewResult, running view Index.
+2025-10-06 00:25:03.958 +03:30 [INF] Executed ViewResult - view Index executed in 164.0269ms.
+2025-10-06 00:25:03.963 +03:30 [INF] Executed action BookStore.Web.Controllers.HomeController.Index (BookStore.Web) in 177.7101ms
+2025-10-06 00:25:03.963 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:25:03.967 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/ - 200 null text/html; charset=utf-8 759.4495ms
+2025-10-06 00:25:04.004 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:25:04.004 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:25:04.005 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:25:04.004 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:25:04.032 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:04.032 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:04.039 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 28.8668ms
+2025-10-06 00:25:04.045 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:04.114 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:25:04.115 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:25:04.115 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:25:04.115 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:25:04.129 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:04.141 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:25:04.142 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:25:04.142 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:04.142 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 137.7893ms
+2025-10-06 00:25:04.148 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:04.182 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 176.5252ms
+2025-10-06 00:25:04.199 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 84.5126ms
+2025-10-06 00:25:04.277 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:25:04.278 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:04.278 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 163.9209ms
+2025-10-06 00:25:04.288 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:25:04.288 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:04.288 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 284.3396ms
+2025-10-06 00:25:04.302 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 186.5268ms
+2025-10-06 00:25:04.421 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:25:04.427 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 6.7256ms
+2025-10-06 00:25:04.428 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:25:10.579 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/Logout - null null
+2025-10-06 00:25:10.600 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.AccountController.Logout (BookStore.Web)'
+2025-10-06 00:25:10.603 +03:30 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout() on controller BookStore.Web.Controllers.AccountController (BookStore.Web).
+2025-10-06 00:25:12.057 +03:30 [INF] AuthenticationScheme: Cookies signed out.
+2025-10-06 00:25:12.059 +03:30 [INF] Executing RedirectResult, redirecting to /.
+2025-10-06 00:25:12.059 +03:30 [INF] Executed action BookStore.Web.Controllers.AccountController.Logout (BookStore.Web) in 1455.6751ms
+2025-10-06 00:25:12.059 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.AccountController.Logout (BookStore.Web)'
+2025-10-06 00:25:12.069 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/Logout - 302 0 null 1490.2697ms
+2025-10-06 00:25:12.071 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/ - null null
+2025-10-06 00:25:12.079 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:25:12.079 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookStore.Web.Controllers.HomeController (BookStore.Web).
+2025-10-06 00:25:12.080 +03:30 [INF] Executing ViewResult, running view Index.
+2025-10-06 00:25:12.092 +03:30 [INF] Executed ViewResult - view Index executed in 13.015ms.
+2025-10-06 00:25:12.093 +03:30 [INF] Executed action BookStore.Web.Controllers.HomeController.Index (BookStore.Web) in 14.088ms
+2025-10-06 00:25:12.094 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:25:12.094 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/ - 200 null text/html; charset=utf-8 22.6199ms
+2025-10-06 00:25:12.130 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:25:12.130 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:25:12.130 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:25:12.130 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:25:12.183 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:12.183 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 53.1083ms
+2025-10-06 00:25:12.184 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:25:12.190 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:25:12.191 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:25:12.191 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:25:12.191 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.9565ms
+2025-10-06 00:25:12.204 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:12.204 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:12.204 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:25:12.204 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:25:12.204 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:25:12.204 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:12.204 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:12.204 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:12.205 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 74.2661ms
+2025-10-06 00:25:12.205 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 74.5773ms
+2025-10-06 00:25:12.205 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 74.2593ms
+2025-10-06 00:25:12.220 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:12.228 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:25:12.228 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:12.229 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 38.2987ms
+2025-10-06 00:25:12.241 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.0275ms
+2025-10-06 00:25:12.273 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:25:12.274 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 1.6468ms
+2025-10-06 00:25:12.275 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:25:14.557 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/Account/LoginAsync - null null
+2025-10-06 00:25:14.568 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.AccountController.LoginAsync (BookStore.Web)'
+2025-10-06 00:25:14.573 +03:30 [INF] Route matched with {action = "LoginAsync", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginAsync() on controller BookStore.Web.Controllers.AccountController (BookStore.Web).
+2025-10-06 00:25:20.673 +03:30 [INF] Executing ViewResult, running view LoginAsync.
+2025-10-06 00:25:21.301 +03:30 [INF] Executed ViewResult - view LoginAsync executed in 679.3132ms.
+2025-10-06 00:25:21.301 +03:30 [INF] Executed action BookStore.Web.Controllers.AccountController.LoginAsync (BookStore.Web) in 6728.6053ms
+2025-10-06 00:25:21.301 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.AccountController.LoginAsync (BookStore.Web)'
+2025-10-06 00:25:21.302 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/Account/LoginAsync - 200 null text/html; charset=utf-8 6744.3256ms
+2025-10-06 00:25:21.336 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:25:21.337 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:25:21.337 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:25:21.337 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:25:21.337 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:21.337 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:21.337 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:21.338 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 0.978ms
+2025-10-06 00:25:21.338 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:25:21.338 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:25:21.338 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:21.338 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:25:21.338 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:21.338 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 1.1789ms
+2025-10-06 00:25:21.338 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 1.4529ms
+2025-10-06 00:25:21.347 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:25:21.347 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:21.348 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 11.2801ms
+2025-10-06 00:25:21.353 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:25:21.353 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:21.356 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:25:21.356 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:21.356 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 3.298ms
+2025-10-06 00:25:21.357 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:25:21.357 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.6869ms
+2025-10-06 00:25:21.373 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:25:21.430 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.8596ms
+2025-10-06 00:25:21.490 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:25:21.490 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 0.9659ms
+2025-10-06 00:25:21.491 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:25:31.249 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7223/Account/LoginAsync - application/x-www-form-urlencoded 281
+2025-10-06 00:25:31.259 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.AccountController.LoginAsync (BookStore.Web)'
+2025-10-06 00:25:31.310 +03:30 [INF] Route matched with {action = "LoginAsync", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(BookStore.Domain.ViewModels.LoginViewModel) on controller BookStore.Web.Controllers.AccountController (BookStore.Web).
+2025-10-06 00:25:33.579 +03:30 [INF] Executed DbCommand (189ms) [Parameters=[@__userNameoremail_0='?' (Size = 4000), @__userNameoremail_0_1='?' (Size = 500), @__password_1='?' (Size = 500)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ActiveCode], [a].[DateAt], [a].[Email], [a].[IsActive], [a].[IsAdmin], [a].[IsDelete], [a].[PasswordHash], [a].[Title], [a].[UpDateAt], [a].[UserId]
+FROM [Accounts] AS [a]
+WHERE ([a].[Title] = @__userNameoremail_0 OR [a].[Email] = @__userNameoremail_0_1) AND [a].[PasswordHash] = @__password_1 AND [a].[IsActive] = CAST(1 AS bit) AND [a].[IsDelete] = CAST(0 AS bit)
+2025-10-06 00:25:33.836 +03:30 [INF] AuthenticationScheme: Cookies signed in.
+2025-10-06 00:25:33.841 +03:30 [INF] Executing RedirectResult, redirecting to /.
+2025-10-06 00:25:33.841 +03:30 [INF] Executed action BookStore.Web.Controllers.AccountController.LoginAsync (BookStore.Web) in 2530.8385ms
+2025-10-06 00:25:33.842 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.AccountController.LoginAsync (BookStore.Web)'
+2025-10-06 00:25:33.848 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7223/Account/LoginAsync - 302 0 null 2598.7592ms
+2025-10-06 00:25:33.853 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/ - null null
+2025-10-06 00:25:33.861 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:25:33.861 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookStore.Web.Controllers.HomeController (BookStore.Web).
+2025-10-06 00:25:43.868 +03:30 [INF] Executing ViewResult, running view Index.
+2025-10-06 00:25:43.873 +03:30 [INF] Executed ViewResult - view Index executed in 5.2214ms.
+2025-10-06 00:25:43.874 +03:30 [INF] Executed action BookStore.Web.Controllers.HomeController.Index (BookStore.Web) in 10012.3477ms
+2025-10-06 00:25:43.874 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:25:43.874 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/ - 200 null text/html; charset=utf-8 10020.9919ms
+2025-10-06 00:25:43.919 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:25:43.919 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:25:43.920 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:25:43.919 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:25:43.920 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:43.920 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:43.920 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:25:43.920 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:43.920 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 0.7944ms
+2025-10-06 00:25:43.920 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:43.920 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:25:43.920 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 0.6083ms
+2025-10-06 00:25:43.920 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:25:43.920 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:43.920 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 1.0028ms
+2025-10-06 00:25:43.926 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:25:43.926 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:43.926 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 6.9143ms
+2025-10-06 00:25:43.941 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:25:43.941 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:25:43.941 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.5662ms
+2025-10-06 00:25:43.942 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:43.943 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:25:43.944 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:25:43.944 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 2.756ms
+2025-10-06 00:25:43.953 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:25:43.992 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.1807ms
+2025-10-06 00:25:44.045 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:25:44.045 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 0.703ms
+2025-10-06 00:25:44.045 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:25:49.721 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/Book/SearchBookAndAuthorasync - null null
+2025-10-06 00:25:49.728 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web)'
+2025-10-06 00:25:49.736 +03:30 [INF] Route matched with {action = "SearchBookAndAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchBookAndAuthorasync() on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:25:55.189 +03:30 [INF] Executing ViewResult, running view SearchBookAndAuthorasync.
+2025-10-06 00:26:18.889 +03:30 [INF] User profile is available. Using 'C:\Users\imani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 00:26:21.468 +03:30 [INF] Now listening on: https://localhost:7223
+2025-10-06 00:26:21.469 +03:30 [INF] Now listening on: http://localhost:5186
+2025-10-06 00:26:21.509 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 00:26:21.509 +03:30 [INF] Hosting environment: Development
+2025-10-06 00:26:21.509 +03:30 [INF] Content root path: D:\asp\bookStoor\BookStore.Web
+2025-10-06 00:26:22.518 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/ - null null
+2025-10-06 00:26:23.038 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:26:23.077 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookStore.Web.Controllers.HomeController (BookStore.Web).
+2025-10-06 00:26:23.094 +03:30 [INF] Executing ViewResult, running view Index.
+2025-10-06 00:26:23.265 +03:30 [INF] Executed ViewResult - view Index executed in 172.4811ms.
+2025-10-06 00:26:23.272 +03:30 [INF] Executed action BookStore.Web.Controllers.HomeController.Index (BookStore.Web) in 193.5014ms
+2025-10-06 00:26:23.272 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:26:23.277 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/ - 200 null text/html; charset=utf-8 770.6542ms
+2025-10-06 00:26:23.333 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:26:23.333 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:26:23.333 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:26:23.333 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:26:23.396 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:23.396 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:23.397 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 63.6687ms
+2025-10-06 00:26:23.407 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:23.407 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:26:23.443 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:26:23.444 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:26:23.445 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:26:23.504 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:23.527 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:26:23.527 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:26:23.529 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:23.529 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:23.529 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 195.7425ms
+2025-10-06 00:26:23.529 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 195.963ms
+2025-10-06 00:26:23.580 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 135.7042ms
+2025-10-06 00:26:23.683 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:26:23.684 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:23.685 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 241.6624ms
+2025-10-06 00:26:23.689 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:26:23.690 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:23.690 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 356.6896ms
+2025-10-06 00:26:23.697 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 253.2912ms
+2025-10-06 00:26:23.801 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:26:23.808 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 6.7634ms
+2025-10-06 00:26:23.808 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:26:27.686 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/Book/SearchAuthorasync - null null
+2025-10-06 00:26:27.707 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:26:27.720 +03:30 [INF] Route matched with {action = "SearchAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchAuthorasync() on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:26:34.974 +03:30 [INF] Executing ViewResult, running view SearchAuthorasync.
+2025-10-06 00:26:34.996 +03:30 [INF] Executed ViewResult - view SearchAuthorasync executed in 24.0247ms.
+2025-10-06 00:26:34.997 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web) in 7276.153ms
+2025-10-06 00:26:34.997 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:26:35.005 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/Book/SearchAuthorasync - 200 null text/html; charset=utf-8 7318.9636ms
+2025-10-06 00:26:35.037 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:26:35.038 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:26:35.038 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:26:35.038 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:26:35.073 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:35.073 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 35.5256ms
+2025-10-06 00:26:35.073 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:26:35.081 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:26:35.081 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:35.081 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 43.9916ms
+2025-10-06 00:26:35.083 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:35.083 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:35.083 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:26:35.083 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:35.083 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:26:35.084 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:35.084 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 45.9042ms
+2025-10-06 00:26:35.084 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 45.71ms
+2025-10-06 00:26:35.092 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:26:35.093 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:26:35.094 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.7103ms
+2025-10-06 00:26:35.108 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:35.109 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:26:35.110 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:26:35.111 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:35.111 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 19.5655ms
+2025-10-06 00:26:35.163 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.7829ms
+2025-10-06 00:26:35.252 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:26:35.254 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 1.4834ms
+2025-10-06 00:26:35.254 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:26:43.621 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - application/x-www-form-urlencoded 263
+2025-10-06 00:26:43.636 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:26:43.698 +03:30 [INF] Route matched with {action = "SearchAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchAuthorasync(System.String) on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:26:46.281 +03:30 [INF] Executed DbCommand (201ms) [Parameters=[@__author_0_contains='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[CategoryId], [b].[DateAt], [b].[IsDelete], [b].[PublicationDate], [b].[Publisher], [b].[Title], [b].[UpDateAt], [b0].[Id], [b0].[BookId], [b0].[DateAt], [b0].[IsDelete], [b0].[IsReturn], [b0].[ReturnDate], [b0].[Title], [b0].[UpDateAt], [b0].[UserId]
+FROM [Books] AS [b]
+LEFT JOIN [Borrowing] AS [b0] ON [b].[Id] = [b0].[BookId]
+WHERE [b].[Author] LIKE @__author_0_contains ESCAPE N'\'
+ORDER BY [b].[Id]
+2025-10-06 00:26:46.692 +03:30 [INF] Executing ViewResult, running view GetAllBookAsync.
+2025-10-06 00:26:46.757 +03:30 [INF] Executed ViewResult - view GetAllBookAsync executed in 69.2957ms.
+2025-10-06 00:26:46.758 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web) in 3059.5548ms
+2025-10-06 00:26:46.758 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:26:46.768 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - 200 null text/html; charset=utf-8 3147.7585ms
+2025-10-06 00:26:46.801 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:26:46.801 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:26:46.802 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:46.802 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 0.9849ms
+2025-10-06 00:26:46.802 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:26:46.802 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:26:46.803 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:26:46.804 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:46.804 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:46.804 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:26:46.804 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:26:46.804 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:46.805 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:46.805 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 2.6158ms
+2025-10-06 00:26:46.805 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 2.5036ms
+2025-10-06 00:26:46.813 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:26:46.813 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:26:46.813 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:26:46.814 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:26:46.815 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:46.815 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 14.2956ms
+2025-10-06 00:26:46.815 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:46.815 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 2.0654ms
+2025-10-06 00:26:46.819 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:26:46.827 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:26:46.827 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 14.2412ms
+2025-10-06 00:26:46.864 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.9086ms
+2025-10-06 00:26:46.902 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:26:46.903 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 1.0827ms
+2025-10-06 00:26:46.903 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:27:56.790 +03:30 [INF] User profile is available. Using 'C:\Users\imani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 00:27:59.422 +03:30 [INF] Now listening on: https://localhost:7223
+2025-10-06 00:27:59.423 +03:30 [INF] Now listening on: http://localhost:5186
+2025-10-06 00:27:59.462 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 00:27:59.462 +03:30 [INF] Hosting environment: Development
+2025-10-06 00:27:59.463 +03:30 [INF] Content root path: D:\asp\bookStoor\BookStore.Web
+2025-10-06 00:27:59.941 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/ - null null
+2025-10-06 00:28:00.515 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:28:00.551 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookStore.Web.Controllers.HomeController (BookStore.Web).
+2025-10-06 00:28:00.562 +03:30 [INF] Executing ViewResult, running view Index.
+2025-10-06 00:28:00.690 +03:30 [INF] Executed ViewResult - view Index executed in 129.8438ms.
+2025-10-06 00:28:00.693 +03:30 [INF] Executed action BookStore.Web.Controllers.HomeController.Index (BookStore.Web) in 140.9175ms
+2025-10-06 00:28:00.694 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:28:00.699 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/ - 200 null text/html; charset=utf-8 764.1586ms
+2025-10-06 00:28:00.730 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:28:00.731 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:28:00.730 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:28:00.730 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:28:00.755 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:00.755 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:00.757 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:00.789 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 27.8952ms
+2025-10-06 00:28:00.859 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:28:00.859 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:28:00.859 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:28:00.860 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:28:00.904 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:00.907 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:28:00.907 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:28:00.963 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:00.963 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 232.8448ms
+2025-10-06 00:28:00.966 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:00.966 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 235.4666ms
+2025-10-06 00:28:00.967 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 108.3047ms
+2025-10-06 00:28:01.033 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:28:01.035 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:01.035 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 175.4633ms
+2025-10-06 00:28:01.048 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:28:01.048 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:01.049 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 318.5184ms
+2025-10-06 00:28:01.072 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 213.0596ms
+2025-10-06 00:28:01.165 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:28:01.171 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 6.1331ms
+2025-10-06 00:28:01.171 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:28:07.883 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/Book/SearchBookAndAuthorasync - null null
+2025-10-06 00:28:07.899 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web)'
+2025-10-06 00:28:07.912 +03:30 [INF] Route matched with {action = "SearchBookAndAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchBookAndAuthorasync() on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:28:13.160 +03:30 [INF] Executing ViewResult, running view SearchBookAndAuthorasync.
+2025-10-06 00:28:13.210 +03:30 [INF] Executed ViewResult - view SearchBookAndAuthorasync executed in 51.2611ms.
+2025-10-06 00:28:13.210 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web) in 5298.187ms
+2025-10-06 00:28:13.211 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web)'
+2025-10-06 00:28:13.223 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/Book/SearchBookAndAuthorasync - 200 null text/html; charset=utf-8 5339.9361ms
+2025-10-06 00:28:13.249 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:28:13.249 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:28:13.249 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:28:13.249 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:28:13.300 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:13.301 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 51.6847ms
+2025-10-06 00:28:13.301 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:28:13.315 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:28:13.316 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:13.316 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 67.3558ms
+2025-10-06 00:28:13.326 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:13.326 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:13.327 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:28:13.327 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:28:13.327 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:13.327 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:13.327 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 78.4665ms
+2025-10-06 00:28:13.327 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 78.3328ms
+2025-10-06 00:28:13.337 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:28:13.337 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:28:13.338 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 1.4525ms
+2025-10-06 00:28:13.353 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:28:13.366 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:13.369 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:28:13.369 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:13.370 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 32.8212ms
+2025-10-06 00:28:13.403 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.3994ms
+2025-10-06 00:28:13.493 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:28:13.494 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 1.1344ms
+2025-10-06 00:28:13.494 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:28:29.266 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7223/Book/SearchBookAndAuthorasync - application/x-www-form-urlencoded 301
+2025-10-06 00:28:29.280 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web)'
+2025-10-06 00:28:29.310 +03:30 [INF] Route matched with {action = "SearchBookAndAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchBookAndAuthorasync(System.String) on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:28:34.282 +03:30 [INF] Executed DbCommand (145ms) [Parameters=[@__title_0_contains='?' (Size = 4000), @__title_0_contains_1='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[CategoryId], [b].[DateAt], [b].[IsDelete], [b].[PublicationDate], [b].[Publisher], [b].[Title], [b].[UpDateAt]
+FROM [Books] AS [b]
+WHERE [b].[Title] LIKE @__title_0_contains ESCAPE N'\' OR [b].[Author] LIKE @__title_0_contains_1 ESCAPE N'\'
+2025-10-06 00:28:34.482 +03:30 [INF] Executing ViewResult, running view SearchBookAndAuthorasync.
+2025-10-06 00:28:34.506 +03:30 [INF] Executed ViewResult - view SearchBookAndAuthorasync executed in 24.4494ms.
+2025-10-06 00:28:34.506 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web) in 5195.5138ms
+2025-10-06 00:28:34.506 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web)'
+2025-10-06 00:28:34.514 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7223/Book/SearchBookAndAuthorasync - 200 null text/html; charset=utf-8 5248.2348ms
+2025-10-06 00:28:34.533 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:28:34.533 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:28:34.533 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:28:34.533 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:28:34.533 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:34.533 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 0.8515ms
+2025-10-06 00:28:34.533 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:34.533 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:34.534 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:28:34.534 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:28:34.533 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:28:34.534 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:34.534 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:34.534 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 1.5229ms
+2025-10-06 00:28:34.534 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 1.6618ms
+2025-10-06 00:28:34.543 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:28:34.543 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:28:34.543 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:28:34.544 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.8399ms
+2025-10-06 00:28:34.544 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:34.573 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:28:34.573 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:34.574 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 30.4806ms
+2025-10-06 00:28:34.586 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:28:34.586 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:28:34.587 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 54.0363ms
+2025-10-06 00:28:34.614 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.122ms
+2025-10-06 00:28:34.652 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:28:34.653 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 1.2274ms
+2025-10-06 00:28:34.653 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:30:22.126 +03:30 [INF] User profile is available. Using 'C:\Users\imani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 00:30:24.716 +03:30 [INF] Now listening on: https://localhost:7223
+2025-10-06 00:30:24.716 +03:30 [INF] Now listening on: http://localhost:5186
+2025-10-06 00:30:24.756 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 00:30:24.756 +03:30 [INF] Hosting environment: Development
+2025-10-06 00:30:24.756 +03:30 [INF] Content root path: D:\asp\bookStoor\BookStore.Web
+2025-10-06 00:30:25.493 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/ - null null
+2025-10-06 00:30:26.002 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:30:26.038 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookStore.Web.Controllers.HomeController (BookStore.Web).
+2025-10-06 00:30:26.048 +03:30 [INF] Executing ViewResult, running view Index.
+2025-10-06 00:30:26.232 +03:30 [INF] Executed ViewResult - view Index executed in 183.5642ms.
+2025-10-06 00:30:26.237 +03:30 [INF] Executed action BookStore.Web.Controllers.HomeController.Index (BookStore.Web) in 198.17ms
+2025-10-06 00:30:26.238 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:30:26.243 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/ - 200 null text/html; charset=utf-8 759.5005ms
+2025-10-06 00:30:26.286 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:30:26.286 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:30:26.286 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:30:26.286 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:30:26.320 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:26.320 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:26.321 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 35.2023ms
+2025-10-06 00:30:26.363 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:26.404 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:30:26.404 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:30:26.405 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:30:26.405 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:30:26.448 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:26.483 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:30:26.484 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:30:26.484 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:26.484 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:26.485 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 198.6295ms
+2025-10-06 00:30:26.485 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 198.9231ms
+2025-10-06 00:30:26.485 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 81.0069ms
+2025-10-06 00:30:26.580 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:30:26.580 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:30:26.581 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:26.581 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:26.581 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 176.324ms
+2025-10-06 00:30:26.582 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 296.2374ms
+2025-10-06 00:30:26.595 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 189.6744ms
+2025-10-06 00:30:26.692 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:30:26.701 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 8.5211ms
+2025-10-06 00:30:26.701 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:30:32.485 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/Book/SearchBookAndAuthorasync - null null
+2025-10-06 00:30:32.508 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web)'
+2025-10-06 00:30:32.526 +03:30 [INF] Route matched with {action = "SearchBookAndAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchBookAndAuthorasync() on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:30:38.058 +03:30 [INF] Executing ViewResult, running view SearchBookAndAuthorasync.
+2025-10-06 00:30:38.107 +03:30 [INF] Executed ViewResult - view SearchBookAndAuthorasync executed in 51.7593ms.
+2025-10-06 00:30:38.107 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web) in 5580.5691ms
+2025-10-06 00:30:38.107 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web)'
+2025-10-06 00:30:38.119 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/Book/SearchBookAndAuthorasync - 200 null text/html; charset=utf-8 5634.582ms
+2025-10-06 00:30:38.146 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:30:38.146 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:30:38.146 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:30:38.146 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:30:38.205 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:38.206 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 59.7654ms
+2025-10-06 00:30:38.206 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:30:38.225 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:38.225 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:38.225 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:30:38.225 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:30:38.225 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:38.225 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:38.226 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 79.7068ms
+2025-10-06 00:30:38.226 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 79.5563ms
+2025-10-06 00:30:38.232 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:30:38.232 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:38.233 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 87.2789ms
+2025-10-06 00:30:38.244 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:30:38.244 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:30:38.245 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 1.435ms
+2025-10-06 00:30:38.259 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:30:38.280 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:38.284 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:30:38.285 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:38.285 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 41.2902ms
+2025-10-06 00:30:38.330 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.4189ms
+2025-10-06 00:30:38.409 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:30:38.410 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 1.2028ms
+2025-10-06 00:30:38.411 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:30:46.687 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7223/Book/SearchBookAndAuthorasync - application/x-www-form-urlencoded 301
+2025-10-06 00:30:46.705 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web)'
+2025-10-06 00:30:46.732 +03:30 [INF] Route matched with {action = "SearchBookAndAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchBookAndAuthorasync(System.String) on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:30:56.497 +03:30 [INF] Executed DbCommand (85ms) [Parameters=[@__title_0_contains='?' (Size = 4000), @__title_0_contains_1='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[CategoryId], [b].[DateAt], [b].[IsDelete], [b].[PublicationDate], [b].[Publisher], [b].[Title], [b].[UpDateAt]
+FROM [Books] AS [b]
+WHERE [b].[Title] LIKE @__title_0_contains ESCAPE N'\' OR [b].[Author] LIKE @__title_0_contains_1 ESCAPE N'\'
+2025-10-06 00:30:56.648 +03:30 [INF] Executing ViewResult, running view SearchBookAndAuthorasync.
+2025-10-06 00:30:56.660 +03:30 [INF] Executed ViewResult - view SearchBookAndAuthorasync executed in 12.7078ms.
+2025-10-06 00:30:56.661 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web) in 9928.5817ms
+2025-10-06 00:30:56.661 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchBookAndAuthorasync (BookStore.Web)'
+2025-10-06 00:30:56.665 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7223/Book/SearchBookAndAuthorasync - 200 null text/html; charset=utf-8 9979.3822ms
+2025-10-06 00:30:56.684 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:30:56.684 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:30:56.684 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:30:56.684 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:30:56.685 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:56.685 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:56.685 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:56.685 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 1.129ms
+2025-10-06 00:30:56.685 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:30:56.685 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:30:56.685 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:30:56.685 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:56.685 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:56.685 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 1.2241ms
+2025-10-06 00:30:56.685 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 0.9447ms
+2025-10-06 00:30:56.691 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:30:56.691 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:56.691 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 7.864ms
+2025-10-06 00:30:56.693 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:30:56.693 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.5087ms
+2025-10-06 00:30:56.695 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:30:56.695 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:56.696 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:30:56.699 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:30:56.700 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:30:56.701 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 6.226ms
+2025-10-06 00:30:56.733 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.5248ms
+2025-10-06 00:30:56.761 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:30:56.762 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 0.6736ms
+2025-10-06 00:30:56.762 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:34:46.881 +03:30 [INF] User profile is available. Using 'C:\Users\imani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 00:34:48.867 +03:30 [INF] Now listening on: https://localhost:7223
+2025-10-06 00:34:48.868 +03:30 [INF] Now listening on: http://localhost:5186
+2025-10-06 00:34:48.906 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 00:34:48.906 +03:30 [INF] Hosting environment: Development
+2025-10-06 00:34:48.906 +03:30 [INF] Content root path: D:\asp\bookStoor\BookStore.Web
+2025-10-06 00:34:49.665 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/ - null null
+2025-10-06 00:34:50.218 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:34:50.253 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookStore.Web.Controllers.HomeController (BookStore.Web).
+2025-10-06 00:34:50.264 +03:30 [INF] Executing ViewResult, running view Index.
+2025-10-06 00:34:50.379 +03:30 [INF] Executed ViewResult - view Index executed in 116.4203ms.
+2025-10-06 00:34:50.382 +03:30 [INF] Executed action BookStore.Web.Controllers.HomeController.Index (BookStore.Web) in 128.0705ms
+2025-10-06 00:34:50.382 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:34:50.385 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/ - 200 null text/html; charset=utf-8 732.4131ms
+2025-10-06 00:34:50.418 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:34:50.419 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:34:50.419 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:34:50.418 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:34:50.441 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:34:50.441 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:34:50.442 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:34:50.471 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 24.5712ms
+2025-10-06 00:34:50.534 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:34:50.535 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:34:50.594 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:34:50.594 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:34:50.598 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:34:50.602 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:34:50.602 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:34:50.637 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:34:50.643 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 219.1868ms
+2025-10-06 00:34:50.643 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:34:50.677 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 258.1278ms
+2025-10-06 00:34:50.742 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 175.9802ms
+2025-10-06 00:34:50.839 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:34:50.841 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:34:50.841 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 307.6502ms
+2025-10-06 00:34:50.847 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:34:50.847 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:34:50.847 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 429.0726ms
+2025-10-06 00:34:50.861 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 266.8071ms
+2025-10-06 00:34:50.986 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:34:50.996 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 10.1451ms
+2025-10-06 00:34:50.996 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:34:55.460 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/Book/SearchAuthorasync - null null
+2025-10-06 00:34:55.483 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:34:55.499 +03:30 [INF] Route matched with {action = "SearchAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchAuthorasync() on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:35:00.530 +03:30 [INF] Executing ViewResult, running view SearchAuthorasync.
+2025-10-06 00:35:00.588 +03:30 [INF] Executed ViewResult - view SearchAuthorasync executed in 60.6697ms.
+2025-10-06 00:35:00.589 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web) in 5088.8463ms
+2025-10-06 00:35:00.589 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:35:00.606 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/Book/SearchAuthorasync - 200 null text/html; charset=utf-8 5145.8565ms
+2025-10-06 00:35:00.647 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:35:00.647 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:35:00.648 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:35:00.648 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:35:00.715 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:00.715 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 68.0189ms
+2025-10-06 00:35:00.715 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:35:00.727 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:35:00.727 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:00.727 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 81.06ms
+2025-10-06 00:35:00.744 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:00.744 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:00.744 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:35:00.744 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:35:00.744 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:00.745 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:00.745 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 97.201ms
+2025-10-06 00:35:00.745 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 97.3563ms
+2025-10-06 00:35:00.755 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:35:00.755 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:35:00.756 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 1.161ms
+2025-10-06 00:35:00.766 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:35:00.784 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:00.789 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:35:00.789 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:00.790 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 34.3755ms
+2025-10-06 00:35:00.820 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.7355ms
+2025-10-06 00:35:00.910 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:35:00.911 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 1.0635ms
+2025-10-06 00:35:00.911 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:35:10.243 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - application/x-www-form-urlencoded 263
+2025-10-06 00:35:10.254 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:35:10.277 +03:30 [INF] Route matched with {action = "SearchAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchAuthorasync(System.String) on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:35:13.155 +03:30 [INF] Executed DbCommand (212ms) [Parameters=[@__author_0_contains='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[CategoryId], [b].[DateAt], [b].[IsDelete], [b].[PublicationDate], [b].[Publisher], [b].[Title], [b].[UpDateAt], [b0].[Id], [b0].[BookId], [b0].[DateAt], [b0].[IsDelete], [b0].[IsReturn], [b0].[ReturnDate], [b0].[Title], [b0].[UpDateAt], [b0].[UserId]
+FROM [Books] AS [b]
+LEFT JOIN [Borrowing] AS [b0] ON [b].[Id] = [b0].[BookId]
+WHERE [b].[Author] LIKE @__author_0_contains ESCAPE N'\'
+ORDER BY [b].[Id]
+2025-10-06 00:35:13.569 +03:30 [INF] Executing ViewResult, running view GetAllBookAsync.
+2025-10-06 00:35:13.625 +03:30 [INF] Executed ViewResult - view GetAllBookAsync executed in 57.2623ms.
+2025-10-06 00:35:13.625 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web) in 3347.4871ms
+2025-10-06 00:35:13.625 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:35:13.637 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - 200 null text/html; charset=utf-8 3393.6968ms
+2025-10-06 00:35:13.666 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:35:13.666 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:35:13.667 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:35:13.667 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:35:13.667 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:13.668 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:13.668 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:13.668 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 1.6504ms
+2025-10-06 00:35:13.668 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:35:13.668 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:35:13.668 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:13.668 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:35:13.668 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:13.668 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 1.6816ms
+2025-10-06 00:35:13.668 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 1.8226ms
+2025-10-06 00:35:13.680 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:35:13.680 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:35:13.680 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:35:13.681 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:13.723 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:35:13.723 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:13.723 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 43.1299ms
+2025-10-06 00:35:13.723 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:35:13.723 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 57.3416ms
+2025-10-06 00:35:13.723 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:35:13.723 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 43.5654ms
+2025-10-06 00:35:13.754 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.1662ms
+2025-10-06 00:35:13.777 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:35:13.778 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 1.0698ms
+2025-10-06 00:35:13.778 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:36:01.829 +03:30 [INF] User profile is available. Using 'C:\Users\imani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 00:36:04.331 +03:30 [INF] Now listening on: https://localhost:7223
+2025-10-06 00:36:04.331 +03:30 [INF] Now listening on: http://localhost:5186
+2025-10-06 00:36:04.372 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 00:36:04.373 +03:30 [INF] Hosting environment: Development
+2025-10-06 00:36:04.373 +03:30 [INF] Content root path: D:\asp\bookStoor\BookStore.Web
+2025-10-06 00:36:04.937 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/ - null null
+2025-10-06 00:36:05.457 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:36:05.499 +03:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookStore.Web.Controllers.HomeController (BookStore.Web).
+2025-10-06 00:36:05.511 +03:30 [INF] Executing ViewResult, running view Index.
+2025-10-06 00:36:05.640 +03:30 [INF] Executed ViewResult - view Index executed in 130.2861ms.
+2025-10-06 00:36:05.643 +03:30 [INF] Executed action BookStore.Web.Controllers.HomeController.Index (BookStore.Web) in 143.2563ms
+2025-10-06 00:36:05.643 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.HomeController.Index (BookStore.Web)'
+2025-10-06 00:36:05.646 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/ - 200 null text/html; charset=utf-8 722.0587ms
+2025-10-06 00:36:05.682 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:36:05.682 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:36:05.682 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:36:05.683 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:36:05.778 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:36:05.779 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:36:05.834 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:36:05.939 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:05.939 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:05.941 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 258.3575ms
+2025-10-06 00:36:05.972 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:05.972 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:05.972 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:36:06.026 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 246.925ms
+2025-10-06 00:36:06.036 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:36:06.037 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:36:06.037 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:06.037 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:06.038 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 355.2192ms
+2025-10-06 00:36:06.038 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 355.2697ms
+2025-10-06 00:36:06.136 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:36:06.137 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:06.137 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 359.2962ms
+2025-10-06 00:36:06.144 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:36:06.144 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:06.145 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 462.6133ms
+2025-10-06 00:36:06.157 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 323.2792ms
+2025-10-06 00:36:06.296 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:36:06.304 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 7.9337ms
+2025-10-06 00:36:06.304 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:36:15.194 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/Book/SearchAuthorasync - null null
+2025-10-06 00:36:15.211 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:36:15.226 +03:30 [INF] Route matched with {action = "SearchAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchAuthorasync() on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:36:24.087 +03:30 [INF] Executing ViewResult, running view SearchAuthorasync.
+2025-10-06 00:36:24.122 +03:30 [INF] Executed ViewResult - view SearchAuthorasync executed in 58.5619ms.
+2025-10-06 00:36:24.123 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web) in 8896.8795ms
+2025-10-06 00:36:24.123 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:36:24.130 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/Book/SearchAuthorasync - 200 null text/html; charset=utf-8 8936.2776ms
+2025-10-06 00:36:24.166 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:36:24.166 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:36:24.166 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:36:24.166 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:36:24.200 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 33.9851ms
+2025-10-06 00:36:24.200 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:36:24.200 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:24.205 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:24.205 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:24.205 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:36:24.205 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:36:24.205 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:24.205 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:24.205 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:36:24.205 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 39.6725ms
+2025-10-06 00:36:24.205 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 39.6485ms
+2025-10-06 00:36:24.205 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:24.206 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 39.7897ms
+2025-10-06 00:36:24.215 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:36:24.217 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:36:24.218 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.7767ms
+2025-10-06 00:36:24.229 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:24.230 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:36:24.232 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:36:24.233 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:24.233 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 17.4742ms
+2025-10-06 00:36:24.277 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.4312ms
+2025-10-06 00:36:24.351 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:36:24.352 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 1.2733ms
+2025-10-06 00:36:24.352 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:36:32.745 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - application/x-www-form-urlencoded 263
+2025-10-06 00:36:32.762 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:36:32.788 +03:30 [INF] Route matched with {action = "SearchAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchAuthorasync(System.String) on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:36:35.346 +03:30 [INF] Executed DbCommand (184ms) [Parameters=[@__author_0_contains='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[CategoryId], [b].[DateAt], [b].[IsDelete], [b].[PublicationDate], [b].[Publisher], [b].[Title], [b].[UpDateAt], [b0].[Id], [b0].[BookId], [b0].[DateAt], [b0].[IsDelete], [b0].[IsReturn], [b0].[ReturnDate], [b0].[Title], [b0].[UpDateAt], [b0].[UserId]
+FROM [Books] AS [b]
+LEFT JOIN [Borrowing] AS [b0] ON [b].[Id] = [b0].[BookId]
+WHERE [b].[Author] LIKE @__author_0_contains ESCAPE N'\'
+ORDER BY [b].[Id]
+2025-10-06 00:36:35.709 +03:30 [INF] Executing ViewResult, running view SearchAuthorasync.
+2025-10-06 00:36:35.759 +03:30 [INF] Executed ViewResult - view SearchAuthorasync executed in 49.9784ms.
+2025-10-06 00:36:35.759 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web) in 2971.204ms
+2025-10-06 00:36:35.760 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:36:35.768 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - 200 null text/html; charset=utf-8 3023.3048ms
+2025-10-06 00:36:35.783 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:36:35.784 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:35.785 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:36:35.785 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:36:35.785 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:36:35.786 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:35.786 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 0.9127ms
+2025-10-06 00:36:35.786 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:35.786 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:36:35.786 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:36:35.786 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:35.786 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:36:35.786 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 1.0862ms
+2025-10-06 00:36:35.786 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:35.786 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 1.2866ms
+2025-10-06 00:36:35.794 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:36:35.794 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:36:35.794 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:36:35.795 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:36:35.795 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:35.795 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:35.795 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 1.4079ms
+2025-10-06 00:36:35.795 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 12.0585ms
+2025-10-06 00:36:35.805 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:36:35.805 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:35.806 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 11.5585ms
+2025-10-06 00:36:35.838 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.6406ms
+2025-10-06 00:36:35.868 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:36:35.869 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 1.0754ms
+2025-10-06 00:36:35.869 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:36:48.428 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - application/x-www-form-urlencoded 257
+2025-10-06 00:36:48.438 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:36:48.439 +03:30 [INF] Route matched with {action = "SearchAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchAuthorasync(System.String) on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:36:48.496 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[@__author_0_contains='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[CategoryId], [b].[DateAt], [b].[IsDelete], [b].[PublicationDate], [b].[Publisher], [b].[Title], [b].[UpDateAt], [b0].[Id], [b0].[BookId], [b0].[DateAt], [b0].[IsDelete], [b0].[IsReturn], [b0].[ReturnDate], [b0].[Title], [b0].[UpDateAt], [b0].[UserId]
+FROM [Books] AS [b]
+LEFT JOIN [Borrowing] AS [b0] ON [b].[Id] = [b0].[BookId]
+WHERE [b].[Author] LIKE @__author_0_contains ESCAPE N'\'
+ORDER BY [b].[Id]
+2025-10-06 00:36:48.498 +03:30 [INF] Executing ViewResult, running view SearchAuthorasync.
+2025-10-06 00:36:48.504 +03:30 [INF] Executed ViewResult - view SearchAuthorasync executed in 6.4134ms.
+2025-10-06 00:36:48.504 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web) in 65.465ms
+2025-10-06 00:36:48.504 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:36:48.505 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - 200 null text/html; charset=utf-8 76.7117ms
+2025-10-06 00:36:48.539 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:36:48.539 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:36:48.540 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:48.541 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 1.6289ms
+2025-10-06 00:36:48.541 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:36:48.543 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:36:48.544 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:36:48.545 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:48.545 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:48.545 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:36:48.545 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:36:48.545 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:48.545 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:48.546 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 2.9831ms
+2025-10-06 00:36:48.546 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 2.4382ms
+2025-10-06 00:36:48.554 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:36:48.554 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:48.554 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:36:48.554 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 15.3627ms
+2025-10-06 00:36:48.554 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:36:48.555 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.7651ms
+2025-10-06 00:36:48.556 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:48.556 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:36:48.560 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:36:48.560 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:48.561 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 6.4048ms
+2025-10-06 00:36:48.617 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.1319ms
+2025-10-06 00:36:48.641 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:36:48.642 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 0.906ms
+2025-10-06 00:36:48.642 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:36:53.670 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - application/x-www-form-urlencoded 263
+2025-10-06 00:36:53.681 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:36:53.682 +03:30 [INF] Route matched with {action = "SearchAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchAuthorasync(System.String) on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:36:53.692 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__author_0_contains='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[CategoryId], [b].[DateAt], [b].[IsDelete], [b].[PublicationDate], [b].[Publisher], [b].[Title], [b].[UpDateAt], [b0].[Id], [b0].[BookId], [b0].[DateAt], [b0].[IsDelete], [b0].[IsReturn], [b0].[ReturnDate], [b0].[Title], [b0].[UpDateAt], [b0].[UserId]
+FROM [Books] AS [b]
+LEFT JOIN [Borrowing] AS [b0] ON [b].[Id] = [b0].[BookId]
+WHERE [b].[Author] LIKE @__author_0_contains ESCAPE N'\'
+ORDER BY [b].[Id]
+2025-10-06 00:36:53.694 +03:30 [INF] Executing ViewResult, running view SearchAuthorasync.
+2025-10-06 00:36:53.702 +03:30 [INF] Executed ViewResult - view SearchAuthorasync executed in 7.5263ms.
+2025-10-06 00:36:53.702 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web) in 20.4586ms
+2025-10-06 00:36:53.702 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:36:53.703 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - 200 null text/html; charset=utf-8 33.1413ms
+2025-10-06 00:36:53.726 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:36:53.727 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:53.728 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:36:53.728 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:36:53.728 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:36:53.728 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:53.728 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 0.724ms
+2025-10-06 00:36:53.728 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:53.728 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:36:53.728 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:36:53.729 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:53.729 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:36:53.729 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 1.1617ms
+2025-10-06 00:36:53.729 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:53.729 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 1.1183ms
+2025-10-06 00:36:53.734 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:36:53.734 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:53.735 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 8.3804ms
+2025-10-06 00:36:53.737 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:36:53.737 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:36:53.738 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.6036ms
+2025-10-06 00:36:53.738 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:53.738 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:36:53.741 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:36:53.745 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:36:53.746 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 8.924ms
+2025-10-06 00:36:53.780 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.5689ms
+2025-10-06 00:36:53.787 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:36:53.788 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 0.7856ms
+2025-10-06 00:36:53.788 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:37:04.862 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - application/x-www-form-urlencoded 263
+2025-10-06 00:37:04.872 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:37:04.872 +03:30 [INF] Route matched with {action = "SearchAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchAuthorasync(System.String) on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:37:04.878 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__author_0_contains='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[CategoryId], [b].[DateAt], [b].[IsDelete], [b].[PublicationDate], [b].[Publisher], [b].[Title], [b].[UpDateAt], [b0].[Id], [b0].[BookId], [b0].[DateAt], [b0].[IsDelete], [b0].[IsReturn], [b0].[ReturnDate], [b0].[Title], [b0].[UpDateAt], [b0].[UserId]
+FROM [Books] AS [b]
+LEFT JOIN [Borrowing] AS [b0] ON [b].[Id] = [b0].[BookId]
+WHERE [b].[Author] LIKE @__author_0_contains ESCAPE N'\'
+ORDER BY [b].[Id]
+2025-10-06 00:37:04.880 +03:30 [INF] Executing ViewResult, running view SearchAuthorasync.
+2025-10-06 00:37:04.883 +03:30 [INF] Executed ViewResult - view SearchAuthorasync executed in 4.0821ms.
+2025-10-06 00:37:04.883 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web) in 10.685ms
+2025-10-06 00:37:04.883 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:37:04.884 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - 200 null text/html; charset=utf-8 21.442ms
+2025-10-06 00:37:04.912 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:37:04.912 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:37:04.912 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:37:04.913 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:37:04.913 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:04.913 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 0.9149ms
+2025-10-06 00:37:04.913 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:04.913 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:37:04.913 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:04.913 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:37:04.914 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:04.914 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:37:04.914 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 1.3236ms
+2025-10-06 00:37:04.914 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:04.915 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 2.8034ms
+2025-10-06 00:37:04.921 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:37:04.921 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.6419ms
+2025-10-06 00:37:04.922 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:37:04.923 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:37:04.924 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:04.932 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:37:04.932 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:37:04.932 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:04.932 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:04.932 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 20.4991ms
+2025-10-06 00:37:04.933 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 10.4693ms
+2025-10-06 00:37:04.977 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.671ms
+2025-10-06 00:37:05.018 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:37:05.019 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 2.0057ms
+2025-10-06 00:37:05.020 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:37:11.778 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - application/x-www-form-urlencoded 263
+2025-10-06 00:37:11.792 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:37:11.793 +03:30 [INF] Route matched with {action = "SearchAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchAuthorasync(System.String) on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:37:11.806 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@__author_0_contains='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[CategoryId], [b].[DateAt], [b].[IsDelete], [b].[PublicationDate], [b].[Publisher], [b].[Title], [b].[UpDateAt], [b0].[Id], [b0].[BookId], [b0].[DateAt], [b0].[IsDelete], [b0].[IsReturn], [b0].[ReturnDate], [b0].[Title], [b0].[UpDateAt], [b0].[UserId]
+FROM [Books] AS [b]
+LEFT JOIN [Borrowing] AS [b0] ON [b].[Id] = [b0].[BookId]
+WHERE [b].[Author] LIKE @__author_0_contains ESCAPE N'\'
+ORDER BY [b].[Id]
+2025-10-06 00:37:11.809 +03:30 [INF] Executing ViewResult, running view SearchAuthorasync.
+2025-10-06 00:37:11.813 +03:30 [INF] Executed ViewResult - view SearchAuthorasync executed in 3.4633ms.
+2025-10-06 00:37:11.813 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web) in 20.1472ms
+2025-10-06 00:37:11.813 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:37:11.814 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - 200 null text/html; charset=utf-8 35.9861ms
+2025-10-06 00:37:11.851 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:37:11.851 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:37:11.852 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:11.852 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 0.9131ms
+2025-10-06 00:37:11.852 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:37:11.853 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:37:11.854 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:37:11.854 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:11.854 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:11.855 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:37:11.855 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:11.855 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:37:11.855 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:11.855 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 2.1169ms
+2025-10-06 00:37:11.855 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 1.5657ms
+2025-10-06 00:37:11.864 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:37:11.865 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:37:11.865 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:37:11.866 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:11.868 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:37:11.869 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 4.5589ms
+2025-10-06 00:37:11.869 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:11.870 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 18.6869ms
+2025-10-06 00:37:11.871 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:37:11.871 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:11.871 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 6.8408ms
+2025-10-06 00:37:11.917 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.2611ms
+2025-10-06 00:37:11.950 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:37:11.953 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 3.0742ms
+2025-10-06 00:37:11.953 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
+2025-10-06 00:37:16.503 +03:30 [INF] Request starting HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - application/x-www-form-urlencoded 263
+2025-10-06 00:37:16.514 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:37:16.515 +03:30 [INF] Route matched with {action = "SearchAuthorasync", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchAuthorasync(System.String) on controller BookStore.Web.Controllers.BookController (BookStore.Web).
+2025-10-06 00:37:16.520 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__author_0_contains='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[CategoryId], [b].[DateAt], [b].[IsDelete], [b].[PublicationDate], [b].[Publisher], [b].[Title], [b].[UpDateAt], [b0].[Id], [b0].[BookId], [b0].[DateAt], [b0].[IsDelete], [b0].[IsReturn], [b0].[ReturnDate], [b0].[Title], [b0].[UpDateAt], [b0].[UserId]
+FROM [Books] AS [b]
+LEFT JOIN [Borrowing] AS [b0] ON [b].[Id] = [b0].[BookId]
+WHERE [b].[Author] LIKE @__author_0_contains ESCAPE N'\'
+ORDER BY [b].[Id]
+2025-10-06 00:37:16.521 +03:30 [INF] Executing ViewResult, running view SearchAuthorasync.
+2025-10-06 00:37:16.524 +03:30 [INF] Executed ViewResult - view SearchAuthorasync executed in 2.888ms.
+2025-10-06 00:37:16.524 +03:30 [INF] Executed action BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web) in 9.6197ms
+2025-10-06 00:37:16.525 +03:30 [INF] Executed endpoint 'BookStore.Web.Controllers.BookController.SearchAuthorasync (BookStore.Web)'
+2025-10-06 00:37:16.525 +03:30 [INF] Request finished HTTP/2 POST https://localhost:7223/Book/SearchAuthorasync - 200 null text/html; charset=utf-8 22.0078ms
+2025-10-06 00:37:16.562 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - null null
+2025-10-06 00:37:16.562 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - null null
+2025-10-06 00:37:16.562 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/css/fonts.css - null null
+2025-10-06 00:37:16.562 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - null null
+2025-10-06 00:37:16.563 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:16.563 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:16.563 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:16.563 +03:30 [INF] The file assets/img/user2-160x160.jpg was not modified
+2025-10-06 00:37:16.563 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:16.563 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/fonts.css - 404 0 null 1.2862ms
+2025-10-06 00:37:16.563 +03:30 [INF] The file assets/img/user1-128x128.jpg was not modified
+2025-10-06 00:37:16.563 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/css/fonts.css, Response status code: 404
+2025-10-06 00:37:16.563 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:16.563 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user2-160x160.jpg - 304 null image/jpeg 1.0851ms
+2025-10-06 00:37:16.563 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/assets/img/user1-128x128.jpg - 304 null image/jpeg 1.4557ms
+2025-10-06 00:37:16.622 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 00:37:16.622 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - null null
+2025-10-06 00:37:16.622 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/js/adminlte.js - null null
+2025-10-06 00:37:16.623 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 0.862ms
+2025-10-06 00:37:16.623 +03:30 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:16.625 +03:30 [INF] Sending file. Request path: 'js/adminlte.js'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\3ucqt0scfc-snqebl2v8l.gz'
+2025-10-06 00:37:16.625 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:16.626 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/js/adminlte.js - 200 32626 text/javascript 4.0318ms
+2025-10-06 00:37:16.652 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\dl92tns9nc-dugeouwqr0.gz'
+2025-10-06 00:37:16.652 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-10-06 00:37:16.652 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/css/adminlte.rtl.css - 200 374402 text/css 90.1796ms
+2025-10-06 00:37:16.669 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.7255ms
+2025-10-06 00:37:16.755 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - null null
+2025-10-06 00:37:16.757 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf - 404 0 null 1.3481ms
+2025-10-06 00:37:16.757 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7223/fonts/font-Vazir/Vazir.ttf, Response status code: 404
