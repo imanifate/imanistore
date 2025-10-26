@@ -13,5 +13,6 @@ namespace BookStore.Domain.ViewModels.Book
         public string Author { get; set; }
         public string Publisher { get; set; }
         public DateTime PublicationDate { get; set; } 
+
     }
 }

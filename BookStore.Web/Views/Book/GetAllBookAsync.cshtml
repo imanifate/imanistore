@@ -1,44 +1,44 @@
 ﻿@using BookStore.Domain.ViewModels.Book
 @model ListBookViewModel
 
- @if(ViewData["Title"].ToString() == "جستجو")
+@if (ViewData["Title"].ToString() == "جستجو")
 {
 
-<div class="app-content-header">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-6"><h3 class="mb-0">@ViewData["Title"]</h3></div>
-			<div class="col-sm-6">
-				<ol class="breadcrumb float-sm-end">
-					<li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">خانه</a></li>
-					<li class="breadcrumb-item"><a asp-controller="Book" asp-action="SearchAuthorasync">جستجو</a></li>
-					<li class="breadcrumb-item active" aria-current="page">@ViewData["Title"]</li>
-				</ol>
+	<div class="app-content-header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6"><h3 class="mb-0">@ViewData["Title"]</h3></div>
+				<div class="col-sm-6">
+					<ol class="breadcrumb float-sm-end">
+						<li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">خانه</a></li>
+						<li class="breadcrumb-item"><a asp-controller="Book" asp-action="SearchAuthorasync">جستجو</a></li>
+						<li class="breadcrumb-item active" aria-current="page">@ViewData["Title"]</li>
+					</ol>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 }
 else
 {
-{
-	ViewData["Title"] = "لیست کتابها";
-}
-<div class="app-content-header">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-6"><h3 class="mb-0">@ViewData["Title"]</h3></div>
-			<div class="col-sm-6">
-				<ol class="breadcrumb float-sm-end">
-					<li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">خانه</a></li>
-					<li class="breadcrumb-item"><a asp-controller="Category" asp-action="GetAllCategory">لیست دسته بندی</a></li>
-					<li class="breadcrumb-item active" aria-current="page">@ViewData["Title"]</li>
-				</ol>
+	{
+		ViewData["Title"] = "لیست کتابها";
+	}
+	<div class="app-content-header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6"><h3 class="mb-0">@ViewData["Title"]</h3></div>
+				<div class="col-sm-6">
+					<ol class="breadcrumb float-sm-end">
+						<li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">خانه</a></li>
+						<li class="breadcrumb-item"><a asp-controller="Category" asp-action="GetAllCategory">لیست دسته بندی</a></li>
+						<li class="breadcrumb-item active" aria-current="page">@ViewData["Title"]</li>
+					</ol>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 }
 <div class="app-content">
@@ -78,35 +78,22 @@ else
 									{
 										<tr>
 											<td>@(Model.Books.IndexOf(item) + 1)</td>
-
-											<td>@item.PublicationDate.ToString("yyyy-mm-dd")</td>
-											<td>@item.PublicationDate</td>
-
+											<td>@item.PublicationDate.ToString("yyyy-MM-dd")</td>
 											<td>@item.Publisher</td>
 											<td>@item.BookTitle</td>
 											<td>@item.Author</td>
-
 											<td>
 												<i class="fas @(item.Borrow == true ? "fa-check text-success"
 																			 			 : "fa-times text-danger")"></i>
-
-									        </td>
+											</td>
 								        	<td>
 										        <i class="fas @(item.IsDeleted == true ? "fa-check text-success"
 															 			 : "fa-times text-danger")"></i>
 									        </td>
-
-											
-											<td>
-												<i class="fas @(item.IsDeleted == true ? "fa-check text-success"
-															 			 : "fa-times text-danger")"></i>
-									        </td>
-
-
 											<td>
 												<div class="btn-group btn-group-sm">
-											    @if (User.HasClaim("IsAdmin", "True"))
-												{
+											        @if (User.HasClaim("IsAdmin", "True"))
+													    {
 
 														<a asp-action="EditBookAsync" asp-route-bookId="@item.BookId" class="btn btn-warning">
 															<i class="fas fa-edit ml-2"></i>ویرایش
@@ -133,10 +120,10 @@ else
 																</button>
 															</form>
 														}
-												}
-												     	@if (item.Borrow)
-													    {
-														    <form asp-action="ReturnBookAsync" method="post"
+													    }
+													    @if (item.Borrow)
+													{
+														<form asp-action="ReturnBookAsync" method="post"
 															  onsubmit="return confirm('آیا زمان پس دادن این کتاب رسیده ؟')" style="display:inline;">
 															<input type="hidden" name="bookId" value="@item.BookId" />
 															<input type="hidden" name="CategoryId" value="@item.CategoryId" />
@@ -144,10 +131,10 @@ else
 																<i class="fas fa-hand-paper ml-2"></i>بازگشت
 															</button>
 														</form>
-												     	}
-												      	else
-													    {
-														    <form asp-action="BorrowingAsync" method="post"
+													}
+													else
+													{
+														<form asp-action="BorrowingAsync" method="post"
 															  onsubmit="return confirm('آیا از امانت دادن این کتاب اطمینان دارید؟')" style="display:inline;">
 															<input type="hidden" name="bookId" value="@item.BookId" />
 															<input type="hidden" name="CategoryId" value="@item.CategoryId" />
@@ -156,11 +143,11 @@ else
 															</button>
 														</form>
 
-                 										}
+													}
 
-													
 
-													
+
+
 
 												</div>
 											</td>

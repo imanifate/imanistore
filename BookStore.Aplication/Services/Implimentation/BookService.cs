@@ -131,7 +131,9 @@ namespace BookStore.Aplication.Services.Implimentation
 
         public async Task<Result> EditAsync(EditBookViewModel model)
         {
+
             Book book =await genericRepository.GetByIdAsync(model.BookId);
+
 
             if (book == null) return Result.Null;
 
@@ -160,6 +162,7 @@ namespace BookStore.Aplication.Services.Implimentation
 
             return Result.Success;
         }
+
         public async Task<Result> UnDeleteAsync(int id)
         {
             Book book = await genericRepository.GetByIdAsync(id);
@@ -173,6 +176,7 @@ namespace BookStore.Aplication.Services.Implimentation
 
             return Result.Success;
         }
+
 
     }
 }

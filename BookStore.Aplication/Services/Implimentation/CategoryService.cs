@@ -85,6 +85,7 @@ namespace BookStore.Aplication.Services.Implimentation
             return Result.Success;
         }
 
+
         public async Task<Result> Delete(int id)
         {
            Category category = await genericRepository.GetByIdAsync(id);
@@ -96,7 +97,6 @@ namespace BookStore.Aplication.Services.Implimentation
             await genericRepository.SaveAsync();
 
             return Result.Success;
-
         }
     }
 }

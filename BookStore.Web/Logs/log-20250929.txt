@@ -3027,9 +3027,9 @@ FROM [Books] AS [b]
 2025-09-29 18:11:33.311 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/fonts/font-Vazir/Vazir.ttf - 404 null null 2.0336ms
 2025-09-29 18:11:33.311 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/fonts/font-Vazir/Vazir.ttf, Response status code: 404
 2025-09-29 18:11:33.355 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.6488ms
-2025-09-29 18:11:44.177 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/Home/AdminPage - null null
-2025-09-29 18:11:44.196 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/Home/AdminPage - 404 null null 19.7197ms
-2025-09-29 18:11:44.197 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/Home/AdminPage, Response status code: 404
+2025-09-29 18:11:44.177 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/Home/Index - null null
+2025-09-29 18:11:44.196 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/Home/Index - 404 null null 19.7197ms
+2025-09-29 18:11:44.197 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/Home/Index, Response status code: 404
 2025-09-29 18:13:42.162 +03:30 [INF] User profile is available. Using 'C:\Users\imani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
 2025-09-29 18:13:44.140 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/ - null null
 2025-09-29 18:13:44.182 +03:30 [INF] Application started. Press Ctrl+C to shut down.

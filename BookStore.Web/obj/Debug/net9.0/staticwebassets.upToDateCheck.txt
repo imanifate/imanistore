@@ -94,6 +94,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\bootstrap\js\bootstrap.bundle.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\charts\index.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\developers\updates.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\gitbook\gitbook-plugin-chartjs\Chart.bundle.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\mailbox\read-mail.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\developers\plugins.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\iCheck\line\line.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.nl.js
@@ -128,7 +129,9 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\axes\labell
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\jQueryUI\jquery-ui.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.el.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\general\responsive.html
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\UI\buttons.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\TableTools\examples\defaults.html
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\widgets.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\charts\line.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\pages\dashboard2.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\flot\jquery.flot.stack.js
@@ -136,6 +139,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\axes\styling.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\fastclick\fastclick.min.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.pt.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\popper\esm\popper.min.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\charts\flot.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\adminlte.min.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\Responsive\examples\initialisation\className.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\ionslider\ion.rangeSlider.min.js
@@ -176,6 +180,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\ColReorder\
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\popper\popper-utils.min.js.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.sk.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\ckeditor\translations\fi.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\examples\profile.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\daterangepicker\daterangepicker.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\bootstrap\css\bootstrap-reboot.css.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\select2\i18n\zh-TW.js
@@ -225,9 +230,11 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\axes\radial
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\general\interactions\index.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\style.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\Responsive\css\dataTables.responsive.css
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\charts\inline.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.cy.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\general\fonts.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\gitbook\gitbook-plugin-chartjs\chartjs-plugin-deferred.min.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\calendar.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\Responsive\examples\styling\index.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\flot\jquery.flot.selection.min.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\notes\index.html
@@ -273,6 +280,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\iCheck\polaris\polaris.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\gitbook\theme.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\jquery.dataTables.min.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\jquery.dataTables_themeroller.css
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\forms\advanced.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\js\map-custom.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\flot\excanvas.min.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\ckeditor\translations\sk.js
@@ -306,6 +314,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\font-awesome\fonts\fontawesome-we
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.ru.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\js\adminlte.min.js.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\select2\select2.min.css
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\mailbox\mailbox.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\bootstrap\js\bootstrap.bundle.js.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\bootstrap\js\bootstrap.js.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\select2\i18n\bg.js
@@ -322,6 +331,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\knob\jquery.knob.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\css\adminlte.rtl.css.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\Scroller\css\dataTables.scroller.min.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.ar.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\examples\invoice.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\developers\index.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\select2\i18n\hr.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\FixedHeader\Readme.txt
@@ -334,6 +344,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\ColVis\exam
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\configuration\legend.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\charts\bar.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\popper\umd\popper-utils.js.map
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\examples\login.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\popper\popper-utils.js.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\persian-date.min.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\developers\api.html
@@ -377,6 +388,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\FixedColumn
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\iCheck\flat\yellow.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\input-mask\phone-codes\phone-be.json
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\flot\jquery.flot.categories.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\examples\register.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\select2\i18n\nl.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\adminlte.js.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.it.js
@@ -414,8 +426,10 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\gitbook\gitbook-plu
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\ckeditor\translations\de.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\jquery\jquery.min.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\developers\index.html
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\forms\general.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\ColReorder\examples\scrolling.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\flot\jquery.flot.pie.min.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\examples\blank.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.et.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\bootstrap\js\bootstrap.js.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.da.js
@@ -444,15 +458,16 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\Responsive\
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\general\options.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\popper\popper-utils.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\bootstrap-slider\bootstrap-slider.js
-D:\asp\bookStoor\BookStore.Web\wwwroot\css\main.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chartjs-old\Chart.min.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.ro.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\gitbook\gitbook-plugin-chartjs\style.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\ColVis\js\dataTables.colVis.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\examples\500.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\bootstrap\css\bootstrap.min.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\build\js\Treeview.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\daterangepicker\moment.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\input-mask\jquery.inputmask.phone.extensions.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\examples\lockscreen.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\js\adminlte.min.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\getting-started\index.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\iCheck\line\green.css
@@ -476,6 +491,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-date
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\demo.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\select2\i18n\tr.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\iCheck\minimal\minimal.css
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\forms\editors.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\ckeditor\translations\et.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\ckeditor\translations\nl.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\developers\charts.html
@@ -521,6 +537,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\TableTools\
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\select2\i18n\fi.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\Chart.bundle.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\search_plus_index.json
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\mailbox\compose.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.ka.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\popper\esm\popper.min.js.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\gitbook\fonts\fontawesome\fontawesome-webfont.svg
@@ -530,11 +547,13 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\popper\esm\popper.min.js.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\gitbook\gitbook.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\select2\select2.full.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\sparkline\jquery.sparkline.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\UI\sliders.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\iCheck\minimal\green.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\FixedColumns\examples\size_fluid.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\Responsive\examples\display-control\complexHeader.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.nl-BE.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\gitbook\gitbook-plugin-anchorjs\anchor-style.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\UI\icons.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\ckeditor\translations\it.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\popper\popper-utils.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\iCheck\flat\green.css
@@ -560,8 +579,8 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\FixedHeader
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\fullcalendar\fullcalendar.min.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\bootstrap-slider\slider.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\TableTools\examples\ajax.html
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\UI\general.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\morris\morris.js
-D:\asp\bookStoor\BookStore.Web\wwwroot\css\util.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.kk.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\FixedHeader\css\dataTables.fixedHeader.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\FixedColumns\css\dataTables.fixedColumns.min.css
@@ -612,6 +631,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-date
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\gitbook\images\favicon.ico
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\ckeditor\translations\hr.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\TableTools\Readme.md
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\examples\404.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\FixedColumns\examples\bootstrap.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\ckeditor\translations\uk.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\developers\plugins.html
@@ -634,6 +654,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\select2\i18n\ro.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\popper\esm\popper-utils.min.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\ColVis\examples\two_tables_identical.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\bootstrap\css\bootstrap-grid.css
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\tables\simple.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\ckeditor\translations\pt.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\popper\umd\popper.min.js.map
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\bootstrap\css\bootstrap-grid.min.css
@@ -657,6 +678,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\font-awesome\css\font-awesome.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\Responsive\examples\initialisation\default.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\fullcalendar\fullcalendar.min.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\Responsive\examples\styling\compact.html
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\tables\data.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\gitbook\gitbook-plugin-chartjs\Chart.bundle.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\notes\license.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\iCheck\flat\orange.css
@@ -724,6 +746,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\Scroller\ex
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\AutoFill\examples\scrolling.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\colorpicker\bootstrap-colorpicker.min.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\ColReorder\examples\reset.html
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\examples\invoice-print.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chart.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\css\bootstrap-rtl.min.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\FixedHeader\js\dataTables.fixedHeader.js
@@ -764,6 +787,7 @@ D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\gitbook\style.css
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\docs\axes\cartesian\time.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datatables\extensions\TableTools\examples\pdf_message.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\datepicker\locales\bootstrap-datepicker.bg.js
+D:\asp\bookStoor\BookStore.Web\wwwroot\pages\charts\chartjs.html
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\chart.js\Chart.bundle.js
 D:\asp\bookStoor\BookStore.Web\wwwroot\dist\js\plugins\chartjs2\docs\gitbook\fonts\fontawesome\fontawesome-webfont.svg
 D:\asp\bookStoor\BookStore.Web\wwwroot\plugins\ckeditor\translations\ja.js
@@ -864,8 +888,6 @@ wwwroot\css\adminlte.rtl.css
 wwwroot\css\adminlte.rtl.css.map
 wwwroot\css\adminlte.rtl.min.css
 wwwroot\css\adminlte.rtl.min.css.map
-wwwroot\css\main.css
-wwwroot\css\util.css
 wwwroot\dist\css\adminlte.css
 wwwroot\dist\css\adminlte.css.map
 wwwroot\dist\css\adminlte.min.css
@@ -1091,6 +1113,32 @@ wwwroot\js\adminlte.min.js.map
 wwwroot\js\main.js
 wwwroot\js\map-custom.js
 wwwroot\js\slick-custom.js
+wwwroot\pages\calendar.html
+wwwroot\pages\charts\chartjs.html
+wwwroot\pages\charts\flot.html
+wwwroot\pages\charts\inline.html
+wwwroot\pages\examples\404.html
+wwwroot\pages\examples\500.html
+wwwroot\pages\examples\blank.html
+wwwroot\pages\examples\invoice.html
+wwwroot\pages\examples\invoice-print.html
+wwwroot\pages\examples\lockscreen.html
+wwwroot\pages\examples\login.html
+wwwroot\pages\examples\profile.html
+wwwroot\pages\examples\register.html
+wwwroot\pages\forms\advanced.html
+wwwroot\pages\forms\editors.html
+wwwroot\pages\forms\general.html
+wwwroot\pages\mailbox\compose.html
+wwwroot\pages\mailbox\mailbox.html
+wwwroot\pages\mailbox\read-mail.html
+wwwroot\pages\tables\data.html
+wwwroot\pages\tables\simple.html
+wwwroot\pages\UI\buttons.html
+wwwroot\pages\UI\general.html
+wwwroot\pages\UI\icons.html
+wwwroot\pages\UI\sliders.html
+wwwroot\pages\widgets.html
 wwwroot\plugins\bootstrap\css\bootstrap.css
 wwwroot\plugins\bootstrap\css\bootstrap.css.map
 wwwroot\plugins\bootstrap\css\bootstrap.min.css

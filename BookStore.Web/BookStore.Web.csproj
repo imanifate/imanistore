@@ -5,6 +5,13 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties - Copy\**" />
+    <Content Remove="Properties - Copy\**" />
+    <EmbeddedResource Remove="Properties - Copy\**" />
+    <None Remove="Properties - Copy\**" />
+  </ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
 			<PrivateAssets>all</PrivateAssets>

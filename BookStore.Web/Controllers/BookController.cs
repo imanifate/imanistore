@@ -64,6 +64,7 @@ namespace BookStore.Web.Controllers
                     case Result.Error:
                         {
                              AlertMessage("ثبت کتاب با موفقیت انجام نشد", TitleAlert.خطا, IConeAlert.error);
+
                             break;
                         }
                 }
@@ -74,6 +75,7 @@ namespace BookStore.Web.Controllers
             }
             return View("CreateBookAsync");
         }
+
 
         [ActionName("EditBookAsync")]
         [HttpGet]
@@ -118,7 +120,7 @@ namespace BookStore.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteBookAsync(int bookId , int categoryId)
         {
-            Result result =await bookService.DeleteAsync(bookId);
+            Result result =await bookService.UnDeleteAsync(bookId);
 
             switch (result)
             {
@@ -189,6 +191,7 @@ namespace BookStore.Web.Controllers
 
             return View();
         }
+
         [ActionName("ReturnBookAsync")]
         [HttpPost]
         public async Task<IActionResult> ReturnBookAsync(int bookId,int categoryId)
@@ -219,6 +222,7 @@ namespace BookStore.Web.Controllers
             return View();
         }
 
+
         [ActionName("SearchBookAndAuthorasync")]
         [HttpGet]
         public async Task<IActionResult> SearchBookAndAuthorasync()
@@ -241,7 +245,9 @@ namespace BookStore.Web.Controllers
             {
                 AlertMessage("نتیجه ای یافت نشد", TitleAlert.خطا, IConeAlert.error);
                 return View();
+
             }          
+
             return View( result);
             
         }

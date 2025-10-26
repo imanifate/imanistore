@@ -11,7 +11,9 @@ namespace BookStore.Aplication.Services.Interfaces
     {
         Task<Result> BorrowBookAsync(int userId, int bookId);
 
+
         Task<Result> ReturnBookAsync(int userId, int bookId);
+
 
     }
 }

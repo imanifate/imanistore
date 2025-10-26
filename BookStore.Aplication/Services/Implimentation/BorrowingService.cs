@@ -4,17 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BookStore.Aplication.Services.Interfaces;
+
 using BookStore.Data.Repositores;
+
 using BookStore.Domain.Contracts;
 using BookStore.Domain.Enums;
 using BookStore.Domain.Models;
 
 namespace BookStore.Aplication.Services.Implimentation
 {
+
     public class BorrowingService (
         IGenericRepository<Borrowing> genericRepository,
         IBorrowingRpository borrowingRepository
         ): IBorrowingService
+
     {
         public async Task<Result> BorrowBookAsync(int userId, int bookId)
         {
@@ -23,11 +27,14 @@ namespace BookStore.Aplication.Services.Implimentation
             {
                 UserId = userId,
                 BookId = bookId,
-                IsReturn = false
+                IsReturn = false,
+                ReturnDate = DateTime.Now
+
             });
             await genericRepository.SaveAsync();
             return Result.Success;
         }
+
         public async Task<Result> ReturnBookAsync(int userId, int bookId)
         {
             Borrowing borrowing =await  borrowingRepository.GetByBookAndUser(userId, bookId);
@@ -43,5 +50,6 @@ namespace BookStore.Aplication.Services.Implimentation
 
             return Result.Success;
         }
+
     }
 }

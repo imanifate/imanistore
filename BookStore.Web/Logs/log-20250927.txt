@@ -3486,9 +3486,9 @@ FROM [Categories] AS [c]
 2025-09-27 22:33:55.184 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/images/LogoAsanBook.png - 404 null null 1.5071ms
 2025-09-27 22:33:55.185 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/images/LogoAsanBook.png, Response status code: 404
 2025-09-27 22:33:55.231 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/_vs/browserLink - 200 null text/javascript; charset=UTF-8 87.9772ms
-2025-09-27 22:34:06.897 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/Home/AdminPage - null null
-2025-09-27 22:34:06.906 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/Home/AdminPage - 404 null null 10.3768ms
-2025-09-27 22:34:06.907 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/Home/AdminPage, Response status code: 404
+2025-09-27 22:34:06.897 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/Home/Index - null null
+2025-09-27 22:34:06.906 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/Home/Inedx - 404 null null 10.3768ms
+2025-09-27 22:34:06.907 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/Home/Index, Response status code: 404
 2025-09-27 22:35:36.510 +03:30 [INF] User profile is available. Using 'C:\Users\imani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
 2025-09-27 22:35:38.668 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/ - null null
 2025-09-27 22:35:38.732 +03:30 [INF] Application started. Press Ctrl+C to shut down.
@@ -3639,9 +3639,9 @@ FROM [Categories] AS [c]
 2025-09-27 22:38:05.799 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/assets/img/user1-128x128.jpg - 304 null image/jpeg 219.6116ms
 2025-09-27 22:38:05.799 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/assets/img/user2-160x160.jpg - 304 null image/jpeg 204.529ms
 2025-09-27 22:38:05.836 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.6588ms
-2025-09-27 22:38:08.958 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/Home/AdminPage - null null
-2025-09-27 22:38:08.979 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/Home/AdminPage - 404 null null 21.3739ms
-2025-09-27 22:38:08.980 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/Home/AdminPage, Response status code: 404
+2025-09-27 22:38:08.958 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/Home/Index - null null
+2025-09-27 22:38:08.979 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/Home/Index - 404 null null 21.3739ms
+2025-09-27 22:38:08.980 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/Home/Index, Response status code: 404
 2025-09-27 22:46:26.089 +03:30 [INF] User profile is available. Using 'C:\Users\imani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
 2025-09-27 22:46:28.801 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/ - null null
 2025-09-27 22:46:28.845 +03:30 [INF] Application started. Press Ctrl+C to shut down.
@@ -3748,9 +3748,9 @@ FROM [Categories] AS [c]
 2025-09-27 22:48:28.187 +03:30 [INF] Sending file. Request path: 'css/adminlte.rtl.css.map'. Physical path: 'D:\asp\bookStoor\BookStore.Web\obj\Debug\net9.0\compressed\ehmgl4zv44-a1v63x9wfv.gz'
 2025-09-27 22:48:28.187 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
 2025-09-27 22:48:28.201 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/css/adminlte.rtl.css.map - 200 853491 text/plain 24.1438ms
-2025-09-27 22:49:26.807 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/Home/AdminPage - null null
-2025-09-27 22:49:26.878 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/Home/AdminPage - 404 null null 71.0965ms
-2025-09-27 22:49:26.878 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/Home/AdminPage, Response status code: 404
+2025-09-27 22:49:26.807 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/Home/Index - null null
+2025-09-27 22:49:26.878 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/Home/Index - 404 null null 71.0965ms
+2025-09-27 22:49:26.878 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/Home/Index, Response status code: 404
 2025-09-27 22:51:28.344 +03:30 [INF] User profile is available. Using 'C:\Users\imani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
 2025-09-27 22:51:32.387 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/ - null null
 2025-09-27 22:51:32.478 +03:30 [INF] Application started. Press Ctrl+C to shut down.
@@ -3820,9 +3820,9 @@ FROM [Categories] AS [c]
 2025-09-27 22:51:42.909 +03:30 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
 2025-09-27 22:51:42.909 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/assets/img/user2-160x160.jpg - 304 null image/jpeg 103.515ms
 2025-09-27 22:51:42.909 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/assets/img/user1-128x128.jpg - 304 null image/jpeg 103.5819ms
-2025-09-27 22:51:46.263 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/Home/AdminPage - null null
-2025-09-27 22:51:46.291 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/Home/AdminPage - 404 null null 27.3969ms
-2025-09-27 22:51:46.291 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/Home/AdminPage, Response status code: 404
+2025-09-27 22:51:46.263 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/Home/Index - null null
+2025-09-27 22:51:46.291 +03:30 [INF] Request finished HTTP/2 GET https://localhost:44358/Home/Index - 404 null null 27.3969ms
+2025-09-27 22:51:46.291 +03:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44358/Home/Index, Response status code: 404
 2025-09-27 22:52:41.424 +03:30 [INF] Request starting HTTP/2 GET https://localhost:44358/GetAllCategory - null null
 2025-09-27 22:52:41.431 +03:30 [INF] Executing endpoint 'BookStore.Web.Controllers.CategoryController.GetAllCategory (BookStore.Web)'
 2025-09-27 22:52:41.431 +03:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller BookStore.Web.Controllers.CategoryController (BookStore.Web).
